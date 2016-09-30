@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@import "reset";
+
+/*
+	购酒网top 
+ */
+
+.topBox {
+	font-size: 12px;
+}
+
+.top-iconz {
+	-webkit-transition: 0.4s;
+   	-webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+}
+
+.topContainer {
+	background-color: #f7f7f7;
+	width: 100%;
+	.topBox{
+		width: 1200px;
+		margin:0 auto;
+		min-height:32px;
+		.topFocusUs{
+			position: relative;
+			color: #656565;
+			display: block;
+			width: 106px;
+			height:32px;
+			float: left;
+			.icon-erweima02{
+				position:absolute;
+				left: 5px;
+				top:-1px;
+				font-size: 10px;
+				height: 32px;
+				line-height: 32px;		
+			}
+			.focus_gjw {
+				position:absolute;
+				left: 24px;
+				top:8px;
+			}
+			.icon-icon11 {
+				position: absolute;
+				right:8px;
+				top:9px;
+				font-size: 8px;
+			}
+			.top2DCode {
+				position: absolute;
+				left:0;
+				top:36px;
+				display: none;
+				width:200px;
+				height:200px;				
+				color:#fff;
+				box-shadow: 0 0 3px rgba(0,0,0,0.6);
+				/*隐藏的块*/
+				span {
+					display: block;
+					width: 16px;
+					height: 16px;
+					position: absolute;
+					top: -8px;
+					left: 8px;
+					font-size: 24px;
+					text-align: center;
+					line-height: 16px;
+
+				}
+				img {
+					width:200px;
+					height:200px;
+				}
+			}
+		}
+		/*!顶部右侧*/
+		.top-nav {
+			width: 729px;
+			height: 32px;
+			float: right;
+			line-height: 32px;
+			li {
+				float: left;
+				background: url(../img/topbg.jpg) no-repeat right center;
+			}
+			.top-login {
+				width:112px;
+				a {
+					color:#0066cb;
+				}
+			}
+			.topMyOrder {			
+				a {
+					padding:8px 24px;
+					&:hover {
+						color :#c40000;
+					}
+				}
+			}
+			/*用户中心*/
+			.userCenter {
+				position: relative;
+				
+				width: 101px;
+				background-position: right 10px;
+				.userCenterC{
+					width: 90px;
+					margin:0 auto;
+					border: 1px solid #f7f7f7;
+					border-top: 0;
+					
+					a {	
+						
+						display: block;
+						height: 32px;
+						top:0;
+						padding: 0 10px;
+						&:hover {
+							color :#c40000;
+						}
+						span {
+							font-size: 10px;
+							position: absolute;
+							top: -1px;
+							right: 20px;
+						}
+					}
+					.user-jsBox {
+						height:90px;
+						text-align: center;
+						display: none;
+						p {
+							height: 30px;
+							line-height: 30px;
+						}
+					}
+				}
+				
+				
+			}
+		}
+	}
+}
+

@@ -1,0 +1,170 @@
+@charset "UTF-8";
+html, body, div, span,
+dl, dt, dd,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+p, pre, code,
+form, fieldset, legend,
+input, textarea,
+p, blockquote,
+th, td, hr,
+button, article, aside, details, figcaption,
+figure, footer, header, hgroup,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "瀹嬩綋";
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*
+	购酒网top 
+ */
+.topBox {
+  font-size: 12px;
+}
+
+.top-iconz {
+  -webkit-transition: 0.4s;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+}
+
+.topContainer {
+  background-color: #f7f7f7;
+  width: 100%;
+}
+.topContainer .topBox {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 32px;
+  /*!顶部右侧*/
+}
+.topContainer .topBox .topFocusUs {
+  position: relative;
+  color: #656565;
+  display: block;
+  width: 106px;
+  height: 32px;
+  float: left;
+}
+.topContainer .topBox .topFocusUs .icon-erweima02 {
+  position: absolute;
+  left: 5px;
+  top: -1px;
+  font-size: 10px;
+  height: 32px;
+  line-height: 32px;
+}
+.topContainer .topBox .topFocusUs .focus_gjw {
+  position: absolute;
+  left: 24px;
+  top: 8px;
+}
+.topContainer .topBox .topFocusUs .icon-icon11 {
+  position: absolute;
+  right: 8px;
+  top: 9px;
+  font-size: 8px;
+}
+.topContainer .topBox .topFocusUs .top2DCode {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  display: none;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  /*隐藏的块*/
+}
+.topContainer .topBox .topFocusUs .top2DCode span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 16px;
+}
+.topContainer .topBox .topFocusUs .top2DCode img {
+  width: 200px;
+  height: 200px;
+}
+.topContainer .topBox .top-nav {
+  width: 729px;
+  height: 32px;
+  float: right;
+  line-height: 32px;
+  /*用户中心*/
+}
+.topContainer .topBox .top-nav li {
+  float: left;
+  background: url(../img/topbg.jpg) no-repeat right center;
+}
+.topContainer .topBox .top-nav .top-login {
+  width: 112px;
+}
+.topContainer .topBox .top-nav .top-login a {
+  color: #0066cb;
+}
+.topContainer .topBox .top-nav .topMyOrder a {
+  padding: 8px 24px;
+}
+.topContainer .topBox .top-nav .topMyOrder a:hover {
+  color: #c40000;
+}
+.topContainer .topBox .top-nav .userCenter {
+  position: relative;
+  width: 101px;
+  background-position: right 10px;
+}
+.topContainer .topBox .top-nav .userCenter .userCenterC {
+  width: 90px;
+  margin: 0 auto;
+  border: 1px solid #f7f7f7;
+  border-top: 0;
+}
+.topContainer .topBox .top-nav .userCenter .userCenterC a {
+  display: block;
+  height: 32px;
+  top: 0;
+  padding: 0 10px;
+}
+.topContainer .topBox .top-nav .userCenter .userCenterC a:hover {
+  color: #c40000;
+}
+.topContainer .topBox .top-nav .userCenter .userCenterC a span {
+  font-size: 10px;
+  position: absolute;
+  top: -1px;
+  right: 20px;
+}
+.topContainer .topBox .top-nav .userCenter .userCenterC .user-jsBox {
+  height: 90px;
+  text-align: center;
+  display: none;
+}
+.topContainer .topBox .top-nav .userCenter .userCenterC .user-jsBox p {
+  height: 30px;
+  line-height: 30px;
+}
+
+/*# sourceMappingURL=indexTop.css.map */
