@@ -15,6 +15,11 @@ menu, nav, section {
   padding: 0;
 }
 
+img {
+  display: block;
+  border: 0;
+}
+
 body {
   font-family: "瀹嬩綋";
 }
@@ -45,6 +50,17 @@ a {
   -moz-transform: rotateZ(180deg);
 }
 
+.top-iconz1 {
+  -webkit-transition: 0.4s;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  -moz-transform: rotateZ(0deg);
+}
+
+/*页面最顶部*/
 .topContainer {
   background-color: #f7f7f7;
   width: 100%;
@@ -62,8 +78,9 @@ a {
   width: 106px;
   height: 32px;
   float: left;
+  /*隐藏的二维码*/
 }
-.topContainer .topBox .topFocusUs .icon-erweima02 {
+.topContainer .topBox .topFocusUs .icon-erweima {
   position: absolute;
   left: 5px;
   top: -1px;
@@ -76,10 +93,10 @@ a {
   left: 24px;
   top: 8px;
 }
-.topContainer .topBox .topFocusUs .icon-icon11 {
+.topContainer .topBox .topFocusUs .icon-icon09 {
   position: absolute;
   right: 8px;
-  top: 9px;
+  top: 7px;
   font-size: 8px;
 }
 .topContainer .topBox .topFocusUs .top2DCode {
@@ -91,7 +108,7 @@ a {
   height: 200px;
   color: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-  /*隐藏的块*/
+  z-index: 2;
 }
 .topContainer .topBox .topFocusUs .top2DCode span {
   display: block;
@@ -113,6 +130,8 @@ a {
   height: 32px;
   float: right;
   line-height: 32px;
+  font-size: 12px;
+  color: #666;
   /*用户中心*/
 }
 .topContainer .topBox .top-nav li {
@@ -140,6 +159,7 @@ a {
   width: 90px;
   margin: 0 auto;
   border: 1px solid #f7f7f7;
+  border-bottom: 0;
   border-top: 0;
 }
 .topContainer .topBox .top-nav .userCenter .userCenterC a {
@@ -151,20 +171,345 @@ a {
 .topContainer .topBox .top-nav .userCenter .userCenterC a:hover {
   color: #c40000;
 }
-.topContainer .topBox .top-nav .userCenter .userCenterC a span {
-  font-size: 10px;
+.topContainer .topBox .top-nav .userCenter .userCenterC a .icon-icon12 {
+  font-size: 12px;
   position: absolute;
   top: -1px;
   right: 20px;
 }
 .topContainer .topBox .top-nav .userCenter .userCenterC .user-jsBox {
+  width: 92px;
   height: 90px;
   text-align: center;
   display: none;
+  background-color: #fff;
+  position: absolute;
+  left: 3px;
+  top: 32px;
+  z-index: 2;
+  border: 1px solid #ccc;
+  border-top: 0;
 }
 .topContainer .topBox .top-nav .userCenter .userCenterC .user-jsBox p {
   height: 30px;
   line-height: 30px;
+}
+.topContainer .topBox .top-nav .userCenter .userCenterC .user-jsBox p:hover {
+  color: #c40000;
+}
+.topContainer .topBox .top-nav .topOnlineService a {
+  padding: 8px 24px;
+}
+.topContainer .topBox .top-nav .topOnlineService a:hover {
+  color: #c40000;
+}
+.topContainer .topBox .top-nav .topHelp a {
+  padding: 8px 24px;
+}
+.topContainer .topBox .top-nav .topHelp a:hover {
+  color: #c40000;
+}
+.topContainer .topBox .top-nav .topAdvise a {
+  padding: 8px 24px;
+  color: #c40000;
+}
+.topContainer .topBox .top-nav .topTel {
+  background: none;
+}
+.topContainer .topBox .top-nav .topTel a {
+  position: relative;
+  padding: 8px 22px 8px 38px;
+  font-size: 18px;
+  color: #c40000;
+}
+.topContainer .topBox .top-nav .topTel a .icon-dianhua {
+  position: absolute;
+  top: 2px;
+  left: 14px;
+}
+
+/*顶部大广告*/
+.topAdvertContainer .topAdvertBox {
+  position: relative;
+  width: 1200px;
+  height: 270px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.topAdvertContainer .topAdvertBox span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 4px;
+  width: 16px;
+  height: 34px;
+  background-color: #666;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+.topAdvertContainer .topAdvertBox .topad-large-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.topAdvertContainer .topAdvertBox .topad-small-img {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  z-index: -1;
+}
+
+/*公告条*/
+.noticeContainer .noticeBox {
+  width: 1178px;
+  height: 26px;
+  margin: 0 auto;
+  line-height: 26px;
+  border: 1px solid #e4debc;
+  border-right: 0;
+  background-color: #fff7d2;
+  padding-left: 10px;
+  padding-right: 11px;
+  font-size: 12px;
+  color: #999;
+}
+.noticeContainer .noticeBox a {
+  color: #999;
+}
+.noticeContainer .noticeBox .noticeClose {
+  float: right;
+}
+.noticeContainer .noticeBox .icon-tongzhi {
+  font-size: 14px;
+}
+
+/*logo部分*/
+.logoContainer {
+  height: 120px;
+}
+.logoContainer .logoBox {
+  position: relative;
+  height: 120px;
+  width: 1200px;
+  margin: 0 auto;
+  /*搜索框*/
+  /*购物车*/
+  /*购物车鼠标滑入样式*/
+}
+.logoContainer .logoBox h1 {
+  padding-top: 36px;
+  width: 199px;
+  float: left;
+}
+.logoContainer .logoBox .logoRight {
+  float: left;
+  display: block;
+  width: 142px;
+  height: 67px;
+  margin-left: 24px;
+  padding-top: 30px;
+}
+.logoContainer .logoBox .logo-search {
+  width: 648px;
+  height: 75px;
+  float: left;
+  padding-top: 34px;
+  margin-left: 44px;
+}
+.logoContainer .logoBox .logo-search form {
+  position: relative;
+  height: 39px;
+}
+.logoContainer .logoBox .logo-search form .top-sesarchTxt {
+  outline: none;
+  width: 448px;
+  height: 33px;
+  border: 0;
+  border: 3px solid #c40000;
+  border-right: 0;
+  float: left;
+  text-indent: 10px;
+}
+.logoContainer .logoBox .logo-search form .top-search {
+  width: 88px;
+  height: 39px;
+  float: left;
+  text-align: center;
+  line-height: 39px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #c40000;
+  cursor: pointer;
+}
+.logoContainer .logoBox .logo-search form .search-data {
+  width: 450px;
+  background: white;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 14px;
+}
+.logoContainer .logoBox .logo-search form .search-data li {
+  height: 20px;
+  line-height: 20px;
+  text-indent: 5px;
+}
+.logoContainer .logoBox .logo-search form .search-data li a {
+  color: #666;
+}
+.logoContainer .logoBox .logo-search form .search-data .topliactive {
+  background: #459bfb;
+}
+.logoContainer .logoBox .logo-search form .search-data .topliactive a {
+  color: #000;
+}
+.logoContainer .logoBox .logo-search p {
+  height: 34px;
+  line-height: 34px;
+}
+.logoContainer .logoBox .logo-search p a {
+  padding: 0 8px;
+  color: #c40000;
+  font-size: 12px;
+  border-right: 1px solid #ccc;
+}
+.logoContainer .logoBox .topCart {
+  position: absolute;
+  right: 0;
+  top: 34px;
+  height: 34px;
+  width: 115px;
+  background-color: #f9f9f9;
+  border: 1px solid #dfdfdf;
+  border-right: 0;
+  padding-left: 24px;
+  line-height: 34px;
+  font-size: 12px;
+}
+.logoContainer .logoBox .topCart .gouwuche {
+  color: #c40000;
+  cursor: pointer;
+}
+.logoContainer .logoBox .topCart .cartAmount {
+  position: absolute;
+  left: 108px;
+  top: -5px;
+  background-color: #c40000;
+  padding: 0 4px;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 7px;
+}
+.logoContainer .logoBox .topCart .cartCircle {
+  position: absolute;
+  top: 3px;
+  left: 108px;
+  border: 8px solid transparent;
+  border-left-color: #c40000;
+  border-bottom: 0;
+}
+.logoContainer .logoBox .topCart .topCartCon {
+  width: 310px;
+  background-color: #fff;
+  display: none;
+}
+.logoContainer .logoBox .topCart .topCartCon .topCartCover {
+  height: 8px;
+  width: 139px;
+  position: absolute;
+  left: 0px;
+  top: 32px;
+  background-color: #fff;
+  z-index: 2;
+}
+.logoContainer .logoBox .topCart .topCartCon .topCart-jsBox {
+  width: 287px;
+  min-height: 66px;
+  _height: 66px;
+  line-height: 66px;
+  position: absolute;
+  left: -172px;
+  top: 35px;
+  padding-left: 24px;
+  color: #666;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+.logoContainer .logoBox .topCart .topCartCon .topCart-jsBox .gougou {
+  font-size: 30px;
+  color: #c40000;
+}
+.logoContainer .logoBox .topCartMenuactive {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+
+.indexNavContainer {
+  height: 37px;
+  border-bottom: 2px solid #c40000;
+}
+.indexNavContainer .indexNavBox {
+  width: 1200px;
+  margin: 0 auto;
+}
+.indexNavContainer .indexNavBox .navLeft {
+  width: 210px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #ba000c;
+  font-family: "Microsoft Yahei";
+  float: left;
+}
+.indexNavContainer .indexNavBox .indexNav {
+  float: left;
+  width: 790px;
+  height: 37px;
+}
+.indexNavContainer .indexNavBox .indexNav li {
+  float: left;
+}
+.indexNavContainer .indexNavBox .indexNav li a {
+  float: left;
+  padding: 0 24px;
+  height: 37px;
+  line-height: 37px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.indexNavContainer .indexNavBox .indexNav li a:hover {
+  color: #c40000;
+}
+.indexNavContainer .indexNavBox .indexNav li .navFirst {
+  color: #c40000;
+}
+.indexNavContainer .indexNavBox .indexNav .navSecondLi {
+  position: relative;
+}
+.indexNavContainer .indexNavBox .indexNav .navSecondLi .navHot {
+  position: absolute;
+  right: 2px;
+  top: -1px;
+  padding: 0 2px;
+  color: #fff;
+  background-color: #c40000;
+  font-size: 6px;
+  border-radius: 4px;
+}
+.indexNavContainer .indexNavBox img {
+  float: right;
+}
+
+.place {
+  height: 6000px;
 }
 
 /*# sourceMappingURL=indexTop.css.map */
