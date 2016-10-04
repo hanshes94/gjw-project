@@ -353,6 +353,7 @@ a {
   border: 1px solid #ccc;
   display: none;
   font-size: 14px;
+  z-index: 5;
 }
 .logoContainer .logoBox .logo-search form .search-data li {
   height: 20px;
@@ -506,6 +507,31 @@ a {
 }
 .indexNavContainer .indexNavBox img {
   float: right;
+}
+
+/*轮播图+三级菜单*/
+.carouselCont {
+  width: 100%;
+  height: 453px;
+}
+.carouselCont .carouselBox {
+  position: relative;
+  width: 100%;
+  height: 453px;
+}
+.carouselCont .carouselBox li {
+  position: absolute;
+  width: 100%;
+  height: 453px;
+  display: none;
+}
+.carouselCont .carouselBox li a, .carouselCont .carouselBox li img {
+  position: absolute;
+  width: 100%;
+  height: 453px;
+}
+.carouselCont .carouselBox .carouselFirst {
+  display: block;
 }
 
 .place {

@@ -177,7 +177,51 @@ $(function(){
 		}
 		
 	}
+
+	//轮播图
+	var carousel = {
+		init:function(){
+			this.carouselBox = $('.carouselBox');
+			this.carouselLis = this.carouselBox.find('li');
+
+			this.now = 0;//当前
+			this.next = 0;//下一张
+			this.timer = 0;
+
+			this.autoPlay();
+			this.mouseHover();
+		},
+		//自动轮播
+		autoPlay:function(){
+			var that = this;
+			this.timer = setInterval( function(){
+				that.next++;
+				that.next %= 5;
+				that.changeImg();
+			}, 3000);
+		},
+		changeImg:function(){
+			this.carouselLis.eq(this.now).fadeOut(500);
+			this.carouselLis.eq(this.next).fadeIn(500);
+			this.now = this.next;
+		},
+		//鼠标滑过暂停，滑出继续轮播
+		mouseHover:function(){
+			var that = this;
+			this.carouselBox.hover(function(){
+				clearInterval(that.timer);
+			},function(){
+				that.autoPlay();
+			});
+		},
+		circle:function(){
+			
+		}
+	}
+
+
 	indexTop.init();
+	carousel.init();
 });
 
 
