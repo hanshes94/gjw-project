@@ -1,0 +1,37 @@
+{
+	"product":{
+		"101":{
+			"id":"101",
+			"price":"55",
+			"img":"img/nverhong.jpg",
+			"title":"女儿红 浮雕双瓶装 125ml*2"
+		},
+		"102":{
+			"id":"102",
+			"price":"109",
+			"img":"img/lafei.jpg",
+			"title":"法国 拉菲 尚品波尔多 干红葡萄酒750ml"
+		},
+		"103":{
+			"id":"103",
+			"price":"2299",
+			"img":"img/wuliangye.jpg",
+			"title":"55度 五粮液 国庆纪念60周年 750ml"
+		},
+		"104":{
+			"id":"104",
+			"price":"159",
+			"img":"img/wuliangtequ.jpg",
+			"title":"52度 五粮特曲 500ml"
+		},
+		"105":{
+			"id":"105",
+			"price":"9999",
+			"img":"img/maotai.jpg",
+			"title":"53度 茅台 建国60周年 纪念酒 600ml"
+		}
+	}
+
+		
+	
+}

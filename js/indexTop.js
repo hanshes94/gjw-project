@@ -34,6 +34,11 @@ $(function(){
  			this.topCartCon = this.topCart.find('.topCartCon');
  			this.topCartMenu = this.topCart.find('.topCartMenu');
 
+ 			//多级菜单
+ 			this.secMenu = $('.js-secMenu');
+ 			this.carouselCover = $('.carouselCover');
+ 			this.carouselCoverBox = $('.carouselCoverBox');
+
 			//二位码移除的1秒延时器
 			this.timer = 0;
 
@@ -43,7 +48,7 @@ $(function(){
 			this.noticeHide();
 			this.topSearch();
 			this.topCartHover();
-
+			this.menuHover();
 		},
 		//鼠标滑过滑出  顶部的关注
 		topFocusUsHover:function(){
@@ -174,15 +179,27 @@ $(function(){
 				that.topCart.removeClass('topCartMenuactive');
 				that.topCartCon.hide();
 			});
+		},
+
+		//菜单的滑入显示子菜单
+		menuHover:function(){
+			var that = this;
+			this.secMenu.hover(function(){
+				that.carouselCoverBox.show();
+				that.carouselCover.eq( $(this).index()-1 ).show().siblings().hide();
+			},function(){
+				that.carouselCoverBox.hide();
+			})
 		}
-		
 	}
 
 	//轮播图
 	var carousel = {
 		init:function(){
+			//轮播
 			this.carouselBox = $('.carouselBox');
 			this.carouselLis = this.carouselBox.find('li');
+			this.circleLis = $('.circleBox li');
 
 			this.now = 0;//当前
 			this.next = 0;//下一张
@@ -190,6 +207,7 @@ $(function(){
 
 			this.autoPlay();
 			this.mouseHover();
+			this.circleMouseEnter();
 		},
 		//自动轮播
 		autoPlay:function(){
@@ -201,8 +219,10 @@ $(function(){
 			}, 3000);
 		},
 		changeImg:function(){
-			this.carouselLis.eq(this.now).fadeOut(500);
-			this.carouselLis.eq(this.next).fadeIn(500);
+			this.carouselLis.eq(this.now).stop(true).fadeOut(500);
+			this.carouselLis.eq(this.next).stop(true).fadeIn(500);
+			//圆圈颜色变化
+			this.circleLis.eq(this.next).addClass('circleActive').siblings().removeClass('circleActive');
 			this.now = this.next;
 		},
 		//鼠标滑过暂停，滑出继续轮播
@@ -214,12 +234,20 @@ $(function(){
 				that.autoPlay();
 			});
 		},
-		circle:function(){
-			
+		//鼠标滑过下面的5个小圆圈
+		circleMouseEnter:function(){
+			var that = this;
+			this.circleLis.mouseenter(function(){
+				that.carouselLis.eq( that.now ).stop(true).fadeOut(500);
+				that.carouselLis.eq( $(this).index() ).stop(true).fadeIn(500);
+				that.circleLis.eq( $(this).index() ).addClass('circleActive').siblings().removeClass('circleActive');
+				that.now = $(this).index();
+				that.next = $(this).index();
+			});
 		}
 	}
 
-
+	//调用初始化函数
 	indexTop.init();
 	carousel.init();
 });

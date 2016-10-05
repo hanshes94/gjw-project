@@ -1,0 +1,60 @@
+.gifShowContainer {
+	height: 192px;
+	.gifShowBox {
+		width: 1200px;
+		height: 100%;
+		margin:0 auto;
+		position: relative;
+		.showDiv {
+			position: absolute;
+			top: 10px;
+			left: 210px;
+			width: 989px;
+			height: 180px;
+			overflow: hidden;
+		}
+		ul {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 3972px;
+			height: 180px;
+			li{
+				float:left;
+				margin-right: 1px;
+			}
+		}
+		span {
+			position: absolute;
+			top: 45px;
+			width: 22px;
+			height: 42px;
+			font-size: 20px;
+			text-align: center;
+			line-height: 42px;
+			color: rgb(242,242,242);
+			background-color: rgba(0,0,0,0.3);
+			cursor: pointer;
+			display: none;
+			&:hover {
+				background-color: rgba(0,0,0,0.7);
+			}
+		}
+		.showDivLeft {
+			left: 0;
+		}
+		.showDivRight {
+			right: 0;
+		}
+	}
+}
+
+.timeShowContainer {
+	height: 430px;
+	.timeShowBox {
+		width: 1200px;
+		height:100%;
+		margin: 0 auto;
+		
+	}
+}

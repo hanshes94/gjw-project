@@ -1,0 +1,61 @@
+.gifShowContainer {
+  height: 192px;
+}
+.gifShowContainer .gifShowBox {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.gifShowContainer .gifShowBox .showDiv {
+  position: absolute;
+  top: 10px;
+  left: 210px;
+  width: 989px;
+  height: 180px;
+  overflow: hidden;
+}
+.gifShowContainer .gifShowBox ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3972px;
+  height: 180px;
+}
+.gifShowContainer .gifShowBox ul li {
+  float: left;
+  margin-right: 1px;
+}
+.gifShowContainer .gifShowBox span {
+  position: absolute;
+  top: 45px;
+  width: 22px;
+  height: 42px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 42px;
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: none;
+}
+.gifShowContainer .gifShowBox span:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.gifShowContainer .gifShowBox .showDivLeft {
+  left: 0;
+}
+.gifShowContainer .gifShowBox .showDivRight {
+  right: 0;
+}
+
+.timeShowContainer {
+  height: 430px;
+}
+.timeShowContainer .timeShowBox {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=indexMainCon.css.map */

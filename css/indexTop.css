@@ -36,6 +36,10 @@ a {
 /*
 	购酒网top 
  */
+html {
+  -webkit-text-size-adjust: none;
+}
+
 .topBox {
   font-size: 12px;
 }
@@ -460,6 +464,7 @@ a {
   margin: 0 auto;
 }
 .indexNavContainer .indexNavBox .navLeft {
+  position: relative;
   width: 210px;
   height: 37px;
   text-align: center;
@@ -469,6 +474,375 @@ a {
   background-color: #ba000c;
   font-family: "Microsoft Yahei";
   float: left;
+}
+.indexNavContainer .indexNavBox .navLeft .menu {
+  position: absolute;
+  left: 0;
+  top: 37px;
+  width: 210px;
+  height: 453px;
+  padding-top: 2px;
+  background-color: #c81623;
+  z-index: 3;
+  /*购酒直通车*/
+  /*白酒*/
+  /*葡萄酒*/
+  /*洋酒*/
+  /*黄酒*/
+  /*其他*/
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche {
+  height: 84px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche .zhitongche-top {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche .zhitongche-top h5 {
+  width: 90px;
+  font-size: 14px;
+  color: #fff;
+  float: left;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche .zhitongche-top span {
+  position: absolute;
+  left: 90px;
+  top: 8px;
+  float: left;
+  width: 28px;
+  height: 8px;
+  color: #c40000;
+  border-radius: 3px;
+  padding: 3px 2px;
+  background-color: #390004;
+  line-height: 8px;
+  text-align: center;
+  /*css3缩放*/
+  font-size: 12px;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.7);
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche .zhitongche-bot {
+  height: 50px;
+  padding-left: 10px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche .zhitongche-bot a {
+  float: left;
+  font-size: 12px;
+  width: 54px;
+  height: 16px;
+  margin-right: 6px;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche .zhitongche-bot .ztcBotsec {
+  background-color: #fff;
+  color: #c40000;
+  border-radius: 3px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche:hover {
+  background-color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche:hover .zhitongche-top h5 {
+  color: #390004;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche:hover .zhitongche-top span {
+  color: #fff;
+  background-color: #c40000;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche:hover a {
+  color: #333;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .gj-zhitongche:hover .ztcBotsec {
+  background-color: #c40000;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu .baijiuTop h5 {
+  padding-left: 10px;
+  width: 90px;
+  font-size: 14px;
+  color: #fff;
+  float: left;
+  text-align: left;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu .baijiuTop span {
+  position: absolute;
+  left: 190px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  font: 400 16px/16px 'simsun';
+  color: #fff;
+  background-color: #c81623;
+  line-height: 16px;
+  text-align: center;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu .baijiuBot {
+  height: 50px;
+  padding-left: 10px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu .baijiuBot a {
+  float: left;
+  font-size: 12px;
+  padding: 0 5px;
+  height: 16px;
+  margin-right: 6px;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu .baijiuBot .ztcBotsec {
+  background-color: #fff;
+  color: #c40000;
+  border-radius: 3px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu:hover {
+  background-color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu:hover .zhitongche-top h5 {
+  color: #390004;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu:hover .zhitongche-top span {
+  background-color: #fff;
+  color: #000;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu:hover a {
+  color: #333;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .baijiu:hover .ztcBotsec {
+  background-color: #c40000;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu .baijiuTop h5 {
+  padding-left: 10px;
+  width: 90px;
+  font-size: 14px;
+  color: #fff;
+  float: left;
+  text-align: left;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu .baijiuTop span {
+  position: absolute;
+  left: 190px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  font: 400 16px/16px 'simsun';
+  color: #fff;
+  background-color: #c81623;
+  line-height: 16px;
+  text-align: center;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu .baijiuBot {
+  height: 50px;
+  padding-left: 10px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu .baijiuBot a {
+  float: left;
+  font-size: 12px;
+  padding: 0 5px;
+  height: 16px;
+  margin-right: 6px;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu .baijiuBot .ztcBotsec {
+  background-color: #fff;
+  color: #c40000;
+  border-radius: 3px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu:hover {
+  background-color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu:hover .zhitongche-top h5 {
+  color: #390004;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu:hover .zhitongche-top span {
+  background-color: #fff;
+  color: #000;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu:hover a {
+  color: #333;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .putaojiu:hover .ztcBotsec {
+  background-color: #c40000;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu .baijiuTop h5 {
+  padding-left: 10px;
+  width: 90px;
+  font-size: 14px;
+  color: #fff;
+  float: left;
+  text-align: left;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu .baijiuTop span {
+  position: absolute;
+  left: 190px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  font: 400 16px/16px 'simsun';
+  color: #fff;
+  background-color: #c81623;
+  line-height: 16px;
+  text-align: center;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu .baijiuBot {
+  height: 50px;
+  padding-left: 10px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu .baijiuBot a {
+  float: left;
+  font-size: 12px;
+  padding: 0 5px;
+  height: 16px;
+  margin-right: 6px;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu .baijiuBot .ztcBotsec {
+  background-color: #fff;
+  color: #c40000;
+  border-radius: 3px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu:hover {
+  background-color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu:hover .zhitongche-top h5 {
+  color: #390004;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu:hover .zhitongche-top span {
+  background-color: #fff;
+  color: #000;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu:hover a {
+  color: #333;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .yangjiu:hover .ztcBotsec {
+  background-color: #c40000;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu .baijiuTop h5 {
+  padding-left: 10px;
+  width: 160px;
+  font-size: 14px;
+  color: #fff;
+  float: left;
+  text-align: left;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu .baijiuTop span {
+  position: absolute;
+  left: 190px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  font: 400 16px/16px 'simsun';
+  color: #fff;
+  background-color: #c81623;
+  line-height: 16px;
+  text-align: center;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu .baijiuBot {
+  height: 50px;
+  padding-left: 10px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu .baijiuBot a {
+  float: left;
+  font-size: 12px;
+  padding: 0 5px;
+  height: 16px;
+  margin-right: 6px;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu .baijiuBot .ztcBotsec {
+  background-color: #fff;
+  color: #c40000;
+  border-radius: 3px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu:hover {
+  background-color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu:hover .zhitongche-top h5 {
+  color: #390004;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu:hover .zhitongche-top span {
+  background-color: #fff;
+  color: #000;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu:hover a {
+  color: #333;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .huangjiu:hover .ztcBotsec {
+  background-color: #c40000;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .qita .baijiuBot {
+  padding-top: 5px;
+  height: 25px;
+  padding-left: 10px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .qita .baijiuBot a {
+  float: left;
+  font-size: 12px;
+  padding: 0 5px;
+  height: 16px;
+  margin-right: 6px;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .qita .baijiuBot .ztcBotsec {
+  background-color: #fff;
+  color: #c40000;
+  border-radius: 3px;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .qita:hover {
+  background-color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .qita:hover .zhitongche-top h5 {
+  color: #390004;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .qita:hover .zhitongche-top span {
+  background-color: #fff;
+  color: #000;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .qita:hover a {
+  color: #333;
+}
+.indexNavContainer .indexNavBox .navLeft .menu .qita:hover .ztcBotsec {
+  background-color: #c40000;
+  color: #fff;
+}
+.indexNavContainer .indexNavBox .navLeft .carouselCoverBox {
+  position: absolute;
+  left: 210px;
+  top: 39px;
+  background-color: red;
+  width: 989px;
+  height: 453px;
+  z-index: 6;
+  display: none;
+}
+.indexNavContainer .indexNavBox .navLeft .carouselCoverBox .carouselCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 989px;
+  height: 453px;
+  display: none;
 }
 .indexNavContainer .indexNavBox .indexNav {
   float: left;
@@ -509,13 +883,14 @@ a {
   float: right;
 }
 
-/*轮播图+三级菜单*/
+/*轮播图*/
 .carouselCont {
   width: 100%;
   height: 453px;
+  position: relative;
 }
 .carouselCont .carouselBox {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 453px;
 }
@@ -526,12 +901,78 @@ a {
   display: none;
 }
 .carouselCont .carouselBox li a, .carouselCont .carouselBox li img {
-  position: absolute;
-  width: 100%;
+  display: block;
+  width: 1200px;
   height: 453px;
+  margin: 0 auto;
 }
 .carouselCont .carouselBox .carouselFirst {
   display: block;
+  background-color: #fec617;
+}
+.carouselCont .carouselBox .carouselSecond {
+  background-color: #e8118a;
+}
+.carouselCont .carouselBox .carouselThirth {
+  background-color: #682b18;
+}
+.carouselCont .carouselBox .carouselForth {
+  background-color: #f9f7eb;
+}
+.carouselCont .carouselBox .carouselFifth {
+  background-color: #f6f7f2;
+}
+.carouselCont .circleBox {
+  position: absolute;
+  left: 45%;
+  bottom: 10px;
+  z-index: 2;
+}
+.carouselCont .circleBox li {
+  float: left;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c0c0c0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  color: #ddd;
+  font-family: "Microsoft Yahei";
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.carouselCont .circleBox .circleActive {
+  color: #fff;
+  background-color: #c40000;
+}
+.carouselCont .carouselCoverImg {
+  position: absolute;
+  right: 32px;
+  top: 12px;
+  z-index: 5;
+  width: 190px;
+  height: 429px;
+  overflow: hidden;
+}
+.carouselCont .carouselCoverImg:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  top: 0;
+  left: -100px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+}
+.carouselCont .carouselCoverImg:hover:before {
+  left: 140%;
+  transition: left 1s ease 0s;
 }
 
 .place {
