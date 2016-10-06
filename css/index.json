@@ -4,31 +4,122 @@
 			"id":"101",
 			"price":"55",
 			"img":"img/nverhong.jpg",
-			"title":"女儿红 浮雕双瓶装 125ml*2"
+			"title":"女儿红 浮雕双瓶装 125ml*2",
+			"date":"2016/10/10 08:00:00"
 		},
 		"102":{
 			"id":"102",
 			"price":"109",
 			"img":"img/lafei.jpg",
-			"title":"法国 拉菲 尚品波尔多 干红葡萄酒750ml"
+			"title":"法国 拉菲 尚品波尔多 干红葡萄酒750ml",
+			"date":"2016/10/11 08:00:00"
 		},
 		"103":{
 			"id":"103",
 			"price":"2299",
 			"img":"img/wuliangye.jpg",
-			"title":"55度 五粮液 国庆纪念60周年 750ml"
+			"title":"55度 五粮液 国庆纪念60周年 750ml",
+			"date":"2016/10/12 08:00:00"
 		},
 		"104":{
 			"id":"104",
 			"price":"159",
 			"img":"img/wuliangtequ.jpg",
-			"title":"52度 五粮特曲 500ml"
+			"title":"52度 五粮特曲 500ml",
+			"date":"2016/10/13 08:00:00"
 		},
 		"105":{
 			"id":"105",
 			"price":"9999",
 			"img":"img/maotai.jpg",
-			"title":"53度 茅台 建国60周年 纪念酒 600ml"
+			"title":"53度 茅台 建国60周年 纪念酒 600ml",
+			"date":"2016/10/21 08:00:00"
+		}
+	},
+	"tuijian":{
+		"img1":"img/xiadan.jpg",
+		"img2":"img/boerduoi.jpg",
+		"center":{
+			"201":{
+				"title":"52度 五粮液股份公司 1995专卖店酒（新） 500ml",
+				"price":"209元",
+				"img":"img/wuliangye52du.jpg"
+			},
+			"202":{
+				"title":"52度 水井坊 往事 500ml",
+				"price":"139元",
+				"img":"img/shuijingwangsji.jpg"
+			},
+			"203":{
+				"title":"50度 泸州老窖 金奖特曲（原铁盒红装） 500ml",
+				"price":"119元",
+				"img":"img/luzhoulaojiao.jpg"
+			},
+			"204":{
+				"title":"澳大利亚 黄尾袋鼠莫斯卡托 桃红葡萄酒 750ml",
+				"price":"56元",
+				"img":"img/huangweidasishu.jpg"
+			},
+			"205":{
+				"title":"皇家路易 XO 红色天地盖 700ml+50ml",
+				"price":"188元",
+				"img":"img/haungjialuyi.jpg"
+			},
+			"206":{
+				"title":"古越龙山 喜愿黄酒 428ml",
+				"price":"28元",
+				"img":"img/guyuelongshan.jpg"
+			}
+		}
+	},
+	"floor":{
+		"first":{
+			"img1":"img/baijiuguan1.jpg",
+			"lunboimg1":"img/floorcarsel1.jpg",
+			"lunboimg2":"img/floorcarsel2.jpg",
+			"img2":"img/1e1e.jpg",
+			"img3":"img/1fimg3.jpg",
+			"img4":"img/gasdgaesf.jpg",
+			"img5":"img/1fimg5.jpg",
+			"img6":"img/1fimg6.jpg",
+			"img7":"img/1fimg7.jpg",
+			"img8":"img/1fimg8.jpg"
+		},
+		"second":{
+			"img1":"img/2fimg1.jpg",
+			"lunboimg1":"img/2flunboimg1.jpg",
+			"lunboimg2":"img/2flunboimg2.jpg",
+			"img2":"img/2fimg2.jpg",
+			"img3":"img/2fimg3.jpg",
+			"img4":"img/2fimg4.jpg",
+			"img5":"img/2fimg5.jpg",
+			"img6":"img/2fimg6.jpg",
+			"img7":"img/2fimg7.jpg",
+			"img8":"img/2fimg8.jpg"
+		},
+		"third":{
+			"img1":"img/3fimg1.jpg",
+			"lunboimg1":"img/3flunboimg1.jpg",
+			"lunboimg2":"img/3flunboimg2.jpg",
+			"img2":"img/3fimg2.jpg",
+			"img3":"img/3fimg3.jpg",
+			"img4":"img/3fimg4.jpg",
+			"img5":"img/3fimg5.jpg",
+			"img6":"img/3fimg6.jpg",
+			"img7":"img/3fimg7.jpg",
+			"img8":"img/3fimg8.jpg"
+		},
+		"forth":{
+			"img1":"img/4fimg1.jpg",
+			"lunboimg1":"img/4flunboimg1.jpg",
+			"lunboimg2":"img/4flunboimg2.jpg",
+			"img2":"img/4fimg2.jpg",
+			"img3":"img/4fimg3.jpg",
+			"img4":"img/4fimg4.jpg",
+			"img5":"img/4fimg5.jpg",
+			"img6":"img/4fimg6.jpg",
+			"img7":"img/4fimg7.jpg",
+			"img8":"img/4fimg8.jpg"
 		}
 	}
 

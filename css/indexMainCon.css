@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .gifShowContainer {
   height: 192px;
 }
@@ -6,6 +7,30 @@
   height: 100%;
   margin: 0 auto;
   position: relative;
+}
+.gifShowContainer .gifShowBox .gifshowLeft {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  overflow: hidden;
+}
+.gifShowContainer .gifShowBox .gifshowLeft:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  top: 0;
+  left: -100px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+}
+.gifShowContainer .gifShowBox .gifshowLeft:hover:before {
+  left: 140%;
+  transition: left 1s ease 0s;
 }
 .gifShowContainer .gifShowBox .showDiv {
   position: absolute;
@@ -56,6 +81,434 @@
   width: 1200px;
   height: 100%;
   margin: 0 auto;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop {
+  height: 278px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow {
+  width: 948px;
+  height: 278px;
+  float: left;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-tips {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-tips h3 {
+  height: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  width: 86px;
+  float: left;
+  border-right: 2px solid #333;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-tips span {
+  float: left;
+  font-size: 12px;
+  color: #d8bebe;
+  margin-left: 10px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con {
+  height: 248px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl {
+  width: 186px;
+  height: 232px;
+  border: 1px solid #ccc;
+  float: left;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl:nth-child(1) {
+  border-left: 1px solid #ccc;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dt {
+  margin: 0 auto;
+  padding-left: 13px;
+  margin-bottom: 10px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd {
+  height: 62px;
+  font-size: 12px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .title {
+  width: 150px;
+  height: 20px;
+  padding-left: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .title:hover {
+  color: #c40000;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .pro-price {
+  font-weight: 700;
+  color: #c40000;
+  padding-left: 20px;
+  font-size: 18px;
+  height: 20px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .timeBox {
+  position: relative;
+  height: 20px;
+  padding-left: 20px;
+  line-height: 20px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .timeBox .day, .timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .timeBox .hour, .timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .timeBox .minute, .timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .timeBox .sec {
+  color: #c40000;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con dl dd .timeBox .sec {
+  position: absolute;
+  top: 2px;
+  left: 145px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeShow .timeShow-con .dlborderL0 {
+  border-left: 0;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad {
+  width: 252px;
+  height: 278px;
+  float: left;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-tips {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-tips h3 {
+  font-size: 16px;
+  width: 84px;
+  border-right: 2px solid #333;
+  float: left;
+  font-weight: 200;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-tips a {
+  color: #d8bebe;
+  float: left;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-tips a:hover {
+  color: #c40000;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-con {
+  height: 220px;
+  border: 1px solid #ccc;
+  border-right: 0;
+  padding: 12px 0 0 16px;
+  font-size: 12px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-con li {
+  height: 26px;
+  color: #999999;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-con li span {
+  float: left;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-con li .ad-con {
+  width: 170px;
+  height: 26px;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-con li a {
+  color: #999999;
+}
+.timeShowContainer .timeShowBox .timeShowBoxTop .timeshow-ad .timeshow-ad-con li a:hover {
+  color: #c40000;
+}
+.timeShowContainer .timeShowBox .timeShowBoxBot {
+  height: 125px;
+}
+.timeShowContainer .timeShowBox .timeShowBoxBot a {
+  float: left;
+}
+
+.mainContainer {
+  height: 3440px;
+}
+.mainContainer .mainBox {
+  width: 1200px;
+  height: 3440px;
+  margin: 0 auto;
+  /*妤煎眰*/
+}
+.mainContainer .mainBox .buyRecommed {
+  height: 454px;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-top {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-top h3 {
+  width: 85px;
+  height: 20px;
+  font-size: 18px;
+  color: #53515f;
+  float: left;
+  border-right: 2px solid #333;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-top span {
+  float: left;
+  font-size: 12px;
+  color: #acabb1;
+  margin-left: 10px;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot {
+  height: 398px;
+  border: 1px solid #dedede;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .left {
+  width: 238px;
+  height: 398px;
+  float: left;
+  border-right: 1px solid #ccc;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot img {
+  float: left;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro {
+  height: 398px;
+  width: 720px;
+  float: left;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl {
+  width: 239px;
+  height: 199px;
+  border: 1px solid #ddd;
+  float: left;
+  border-left: 0;
+  border-top: 0;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl .tips {
+  padding-top: 12px;
+  cursor: pointer;
+  height: 84px;
+  position: relative;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl .tips h4 {
+  height: 30px;
+  font-size: 18px;
+  color: #373037;
+  text-align: center;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl .tips p {
+  margin: 0 auto;
+  width: 195px;
+  height: 22px;
+  font-size: 12px;
+  color: #302e3c;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl .tips:hover h4, .mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl .tips:hover p {
+  color: #c40000;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl .tips span {
+  position: absolute;
+  left: 37%;
+  top: 66px;
+  padding: 1px 8px;
+  background-color: #ff3a25;
+  color: #fff;
+  border-radius: 7px;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl dt {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl dt img {
+  position: absolute;
+  left: 67px;
+  top: 0;
+  width: 100px;
+  height: 100px;
+}
+.mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl:nth-child(4), .mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl:nth-child(5), .mainContainer .mainBox .buyRecommed .buyRecommed-bot .buyRecommed-pro dl:nth-child(6) {
+  border-bottom: 0;
+}
+.mainContainer .mainBox .floor {
+  height: 532px;
+}
+.mainContainer .mainBox .floor .floor-top {
+  height: 29px;
+  border-bottom: 2px solid #d90e11;
+}
+.mainContainer .mainBox .floor .floor-top h6 {
+  width: 28px;
+  height: 22px;
+  background-color: #d41409;
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+  float: left;
+  font-size: 14px;
+}
+.mainContainer .mainBox .floor .floor-top span {
+  font-size: 16px;
+  color: #636756;
+  padding-left: 10px;
+}
+.mainContainer .mainBox .floor .floor-top a {
+  float: right;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.mainContainer .mainBox .floor .floor-bot {
+  height: 473px;
+  border-bottom: 1px solid #f8f7f5;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou {
+  height: 237px;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .first1 {
+  position: relative;
+  width: 319px;
+  height: 237px;
+  overflow: hidden;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .first1:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  top: 0;
+  left: -100px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .first1:hover:before {
+  left: 140%;
+  transition: left 1s ease 0s;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou a, .mainContainer .mainBox .floor .floor-bot .topCarou div {
+  float: left;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou {
+  width: 440px;
+  height: 237px;
+  position: relative;
+  overflow: hidden;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou ul {
+  width: 1760px;
+  height: 237px;
+  position: absolute;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou ul li {
+  float: left;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou span {
+  position: absolute;
+  top: 88px;
+  width: 29px;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou .showDivLeft {
+  left: 0;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou .showDivRight {
+  right: 0;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou .circle {
+  position: absolute;
+  left: 45%;
+  bottom: 10px;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou .circle li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #434343;
+  float: left;
+  margin-left: 10px;
+}
+.mainContainer .mainBox .floor .floor-bot .topCarou .carou .circle .liactive {
+  background-color: #be1728;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou {
+  height: 236px;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp {
+  width: 319px;
+  height: 236px;
+  float: left;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp .bc-tp-top {
+  height: 74px;
+  background-color: #fff6e5;
+  padding-top: 20px;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp .bc-tp-top li {
+  width: 77px;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #ad6e04;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp .bc-tp-top li:nth-child(4n) {
+  border: 0;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp .bc-tp-top li a {
+  color: #ab6e00;
+  font-size: 12px;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp .shunx {
+  display: block;
+  width: 319px;
+  height: 143px;
+  overflow: hidden;
+  position: relative;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp .shunx:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 143px;
+  top: 0;
+  left: -50px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp .shunx:hover:before {
+  left: 150%;
+  transition: left 1s ease 0s;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp-left {
+  float: left;
+}
+.mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp-left a {
+  float: left;
 }
 
 /*# sourceMappingURL=indexMainCon.css.map */
