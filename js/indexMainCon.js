@@ -99,7 +99,7 @@ $(function(){
 									+	'</dl>';
 
 						}		
-					$('.timeShow-con').html(content);
+					 $('.timeShow-con').html(content);
 				},1000);
 			} )
 		},
@@ -184,6 +184,7 @@ $(function(){
 	/*1楼*/
 	var floor1carousel = {
 		init:function(){
+			this.firstFloor = $('.firstFloor');
 			this.topCarou = $('.firstFloor .topCarou');
 			this.showDiv = this.topCarou.find('.carou');
 			this.spans = this.showDiv.find('span');
@@ -211,7 +212,18 @@ $(function(){
 			var that = this;
 			$.getJSON('css/index.json',function(result){
 				var data = result.floor.first;
-				that.topCarou.find('.ff1').attr("src",data.img1);
+				that.firstFloor.find('.ff1').attr("src",data.img1);
+				that.firstFloor.find('.ff2').attr("src",data.img2);
+				that.firstFloor.find('.ff3').attr("src",data.img3);
+				that.firstFloor.find('.ff4').attr("src",data.img4);
+				that.firstFloor.find('.ff5').attr("src",data.img5);
+				that.firstFloor.find('.ff6').attr("src",data.img6);
+				that.firstFloor.find('.ff7').attr("src",data.img7);
+				that.firstFloor.find('.ff8').attr("src",data.img8);
+				that.firstFloor.find('.clone1').attr("src",data.lunboimg2);
+				that.firstFloor.find('.clone2').attr("src",data.lunboimg1);
+				that.firstFloor.find('.lunboimg1').attr("src",data.lunboimg1);
+				that.firstFloor.find('.lunboimg2').attr("src",data.lunboimg2);
 			})
 		},
 		//自动轮播
@@ -290,6 +302,7 @@ $(function(){
 	/*2楼*/
 	var floor2carousel = {
 		init:function(){
+			this.secondFloor = $('.secondFloor');
 			this.topCarou = $('.secondFloor .topCarou');
 			this.showDiv = this.topCarou.find('.carou');
 			this.spans = this.showDiv.find('span');
@@ -305,11 +318,31 @@ $(function(){
 			
 			this.timer = 0;
 
+			this.initData();
 			this.rightClick();
 			this.leftClick();
 			this.autoplay();
 			this.mouseHover();
 			this.circlesliHover();
+		},
+		//初始化数据
+		initData:function(){
+			var that = this;
+			$.getJSON('css/index.json',function(result){
+				var data = result.floor.second;
+				that.secondFloor.find('.ff1').attr("src",data.img1);
+				that.secondFloor.find('.ff2').attr("src",data.img2);
+				that.secondFloor.find('.ff3').attr("src",data.img3);
+				that.secondFloor.find('.ff4').attr("src",data.img4);
+				that.secondFloor.find('.ff5').attr("src",data.img5);
+				that.secondFloor.find('.ff6').attr("src",data.img6);
+				that.secondFloor.find('.ff7').attr("src",data.img7);
+				that.secondFloor.find('.ff8').attr("src",data.img8);
+				that.secondFloor.find('.clone1').attr("src",data.lunboimg2);
+				that.secondFloor.find('.clone2').attr("src",data.lunboimg1);
+				that.secondFloor.find('.lunboimg1').attr("src",data.lunboimg1);
+				that.secondFloor.find('.lunboimg2').attr("src",data.lunboimg2);
+			})
 		},
 		//自动轮播
 		autoplay:function(){
@@ -387,6 +420,7 @@ $(function(){
 	/*3楼*/
 	var floor3carousel = {
 		init:function(){
+			this.thirdFloor = $('.thirdFloor');
 			this.topCarou = $('.thirdFloor .topCarou');
 			this.showDiv = this.topCarou.find('.carou');
 			this.spans = this.showDiv.find('span');
@@ -402,11 +436,31 @@ $(function(){
 			
 			this.timer = 0;
 
+			this.initData();
 			this.rightClick();
 			this.leftClick();
 			this.autoplay();
 			this.mouseHover();
 			this.circlesliHover();
+		},
+		//初始化数据
+		initData:function(){
+			var that = this;
+			$.getJSON('css/index.json',function(result){
+				var data = result.floor.third;
+				that.thirdFloor.find('.ff1').attr("src",data.img1);
+				that.thirdFloor.find('.ff2').attr("src",data.img2);
+				that.thirdFloor.find('.ff3').attr("src",data.img3);
+				that.thirdFloor.find('.ff4').attr("src",data.img4);
+				that.thirdFloor.find('.ff5').attr("src",data.img5);
+				that.thirdFloor.find('.ff6').attr("src",data.img6);
+				that.thirdFloor.find('.ff7').attr("src",data.img7);
+				that.thirdFloor.find('.ff8').attr("src",data.img8);
+				that.thirdFloor.find('.clone1').attr("src",data.lunboimg2);
+				that.thirdFloor.find('.clone2').attr("src",data.lunboimg1);
+				that.thirdFloor.find('.lunboimg1').attr("src",data.lunboimg1);
+				that.thirdFloor.find('.lunboimg2').attr("src",data.lunboimg2);
+			})
 		},
 		//自动轮播
 		autoplay:function(){
@@ -484,6 +538,7 @@ $(function(){
 	/*4楼*/
 	var floor4carousel = {
 		init:function(){
+			this.forthFloor = $('.forthFloor');
 			this.topCarou = $('.forthFloor .topCarou');
 			this.showDiv = this.topCarou.find('.carou');
 			this.spans = this.showDiv.find('span');
@@ -499,11 +554,31 @@ $(function(){
 			
 			this.timer = 0;
 
+			this.initData();
 			this.rightClick();
 			this.leftClick();
 			this.autoplay();
 			this.mouseHover();
 			this.circlesliHover();
+		},
+		//初始化数据
+		initData:function(){
+			var that = this;
+			$.getJSON('css/index.json',function(result){
+				var data = result.floor.forth;
+				that.forthFloor.find('.ff1').attr("src",data.img1);
+				that.forthFloor.find('.ff2').attr("src",data.img2);
+				that.forthFloor.find('.ff3').attr("src",data.img3);
+				that.forthFloor.find('.ff4').attr("src",data.img4);
+				that.forthFloor.find('.ff5').attr("src",data.img5);
+				that.forthFloor.find('.ff6').attr("src",data.img6);
+				that.forthFloor.find('.ff7').attr("src",data.img7);
+				that.forthFloor.find('.ff8').attr("src",data.img8);
+				that.forthFloor.find('.clone1').attr("src",data.lunboimg2);
+				that.forthFloor.find('.clone2').attr("src",data.lunboimg1);
+				that.forthFloor.find('.lunboimg1').attr("src",data.lunboimg1);
+				that.forthFloor.find('.lunboimg2').attr("src",data.lunboimg2);
+			})
 		},
 		//自动轮播
 		autoplay:function(){
@@ -578,6 +653,55 @@ $(function(){
 		}
 	}
 
+	/*5楼*/
+	var floor5 = {
+		init:function(){
+			this.imgs = $('.fifthFloor a img');
+			var that = this;
+			$.getJSON("css/index.json",function(result){
+				var data = result.floor.fifth;
+				$.each(data,function(index,n){
+					that.imgs.eq(index).attr('src',n);	
+				})
+			})
+		}
+	}
+
+	/*6楼*/
+	var floor6 = {
+		init:function(){
+			this.sixthFloor = $('.sixthFloor');
+			this.floorBot = this.sixthFloor.find('.floor-bot');
+			this.as = this.floorBot.find('a');
+			this.imgs = this.as.find('img');
+
+			this.initData();
+			this.mouseHover();
+		},
+		//数据
+		initData:function(){
+			var that = this;
+			$.getJSON("css/index.json",function(result){
+				var data = result.floor.sixth;
+				$.each(data,function(index,n){
+					that.imgs.eq(index).attr('src',n);	
+				})
+			})
+		},
+		//鼠标滑过滑出
+		mouseHover:function(){
+			this.as.hover(function(){
+				$(this).find('img').stop(true).animate({
+					left: -152
+				},500);
+			},function(){
+				$(this).find('img').stop(true).animate({
+					left: 0
+				},500);
+			});
+		}
+	}
+
 
 	buyRecommed.init();
 	timeShow.init();
@@ -586,4 +710,6 @@ $(function(){
 	floor2carousel.init();
 	floor3carousel.init();
 	floor4carousel.init();
+	floor5.init();
+	floor6.init();
 })

@@ -366,7 +366,10 @@
 .mainContainer .mainBox .floor .floor-top a {
   float: right;
   font-size: 12px;
-  padding-left: 20px;
+  margin-right: 20px;
+}
+.mainContainer .mainBox .floor .floor-top a:hover {
+  color: #c40000;
 }
 .mainContainer .mainBox .floor .floor-bot {
   height: 473px;
@@ -509,6 +512,62 @@
 }
 .mainContainer .mainBox .floor .floor-bot .botCarou .bc-tp-left a {
   float: left;
+}
+.mainContainer .mainBox .fifthFloor.floor {
+  height: 445px;
+}
+.mainContainer .mainBox .fifthFloor.floor .floor-bot {
+  height: 415px;
+  border: 0;
+}
+.mainContainer .mainBox .fifthFloor.floor .floor-bot .floor-bot-link {
+  height: 264px;
+}
+.mainContainer .mainBox .fifthFloor.floor .floor-bot .floor-bot-link a {
+  float: left;
+  margin-right: 5px;
+}
+.mainContainer .mainBox .fifthFloor.floor .floor-bot .floor-bot-link .a1 {
+  width: 236px;
+  height: 236px;
+}
+.mainContainer .mainBox .fifthFloor.floor .floor-bot .floor-bot-link .a2 {
+  padding-top: 29px;
+  width: 236px;
+  height: 207px;
+}
+.mainContainer .mainBox .fifthFloor.floor .floor-bot .floor-bot-link .a2:nth-child(5) {
+  margin-right: 0;
+}
+.mainContainer .mainBox .fifthFloor.floor .floor-bot .floor-bot-bg a {
+  float: left;
+}
+.mainContainer .mainBox .sixthFloor {
+  height: 413px;
+}
+.mainContainer .mainBox .sixthFloor .floor-top a {
+  font-size: 16px;
+  margin-right: 0;
+  color: #3e4028;
+}
+.mainContainer .mainBox .sixthFloor .floor-bot {
+  height: 383px;
+  border: 0;
+  border-left: 1px solid #ccc;
+}
+.mainContainer .mainBox .sixthFloor .floor-bot a {
+  position: relative;
+  float: left;
+  width: 225px;
+  height: 108px;
+  margin-left: 13px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.mainContainer .mainBox .sixthFloor .floor-bot a img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=indexMainCon.css.map */

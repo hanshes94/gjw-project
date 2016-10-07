@@ -1,5 +1,133 @@
 
 $(function(){
+	/*顶部隐藏的搜索框*/
+	var hideTop = {
+		init:function(){
+			//搜索框 
+			this.hideSearchContainer = $('.hideSearchContainer');
+ 			this.topSearchTxt = this.hideSearchContainer.find('.top-sesarchTxt');
+ 			this.topSearchData = this.hideSearchContainer.find('.search-data');
+
+ 			this.scrollChange();
+ 			this.topSearch();
+ 			this.topSearchMouseEnter();
+		},
+		//检测滚动条
+		scrollChange:function(){
+			var that = this;
+			$(window).scroll(function(){
+				var scrollTop = $('body').scrollTop();
+				if( scrollTop >= 540){//大于540滑出
+					that.hideSearchContainer.stop(true).animate({
+						top:0
+					}, 500)
+				}else{
+					that.hideSearchContainer.stop(true).animate({
+						top:-50
+					}, 500)
+				}
+			});
+		},
+		//搜索框搜索数据
+		topSearch:function(){
+			var that = this;
+			//即时搜索事件绑定
+			this.topSearchTxt.on( "input propertychange", function(){
+				that.topSearchData.show();
+				that.topSearchMouseEnter();
+				var canTxt =  that.topSearchTxt.val() ;
+				$.ajax({
+					type:"GET",
+					url:'http://suggestion.baidu.com/su',
+					data: {
+						wd:canTxt,
+						cb:'searchDataHandle1'//回调写在外面
+					},
+					dataType:'jsonp',
+					success:function(){}				
+				});
+			});
+		},
+		//滑过变色
+		topSearchMouseEnter:function(){
+			var that = this;
+			this.topSearchData.on("mouseenter","li",function(){
+				$(this).addClass('topliactive').siblings().removeClass('topliactive');
+			});
+			$(document).click(function(e){
+				if( !$(e.target).is(".logo-search form,.logo-search form *") ){
+					that.topSearchData.hide();
+				}
+			})
+		}
+	}
+
+	var right = {
+		init:function(){
+			this.rightBox = $('.rightBox');
+			this.jsdivbox = this.rightBox.find('.jsdivbox');
+			this.rightqrCode = this.rightBox.find('.rightqrCode');
+			this.rightBang = this.rightBox.find('.rightBang');
+			this.jsdivbox1 = this.rightBox.find('.jshideBox1');
+
+			this.jsdivbox2 = this.rightBox.find('.jshideBox2');
+			this.totop11 = this.rightBox.find('.totop1');
+
+			this.mouseHover();
+			this.toTop1();
+		},
+		//鼠标滑过
+		mouseHover:function(){
+			var that = this;
+			this.jsdivbox.hover(function(){
+				$(this).find('.jshideBox').show().stop(true).animate({
+					left: -110,
+					opacity:1
+				});
+			},function(){
+				$(this).find('.jshideBox').hide().stop(true).animate({
+					left: -160,
+					opacity:0
+				});
+			});
+			//二维码
+			this.rightqrCode.hover(function(){
+				that.jsdivbox1.show().stop(true).animate({
+					left: -200,
+					opacity:1
+				});
+			},function(){
+				that.jsdivbox1.hide().stop(true).animate({
+					left: -250,
+					opacity:0
+				});
+			});
+			//点赞
+			this.rightBang.hover(function(){
+				that.jsdivbox2.show().stop(true).animate({
+					left: -230,
+					opacity:1
+				});
+			},function(){
+				that.jsdivbox2.hide().stop(true).animate({
+					left: -280,
+					opacity:0
+				});
+			});
+
+		},
+		//返回顶部
+		toTop1:function(){
+			this.totop11.click(function(){
+				$('body').animate({
+					scrollTop: 0
+				})
+			});
+		}
+		
+	}
+
+
 	//购酒网顶端（top+notice）代码
 	var indexTop = {
 		init:function(){
@@ -247,15 +375,77 @@ $(function(){
 		}
 	}
 
+	/*购酒网底部代码*/
+	var indexBottom = {
+		init:function(){
+			this.ul = $('.indexBotContainer .bot-carousel ul');
+
+			this.index = 0;
+			this.timer = 0;
+
+			this.auto();
+			this.mouseHover();
+		},
+		//自动轮播
+		auto:function(){
+			var that = this;
+			this.timer = setInterval(function(){
+				that.index++;
+				that.ul.animate({
+					top: -30*that.index
+				},function(){
+					if(that.index == 2){
+						that.ul.css({
+							top:0
+						})
+						that.index = 0;
+					}
+				});
+			},2000)
+		},
+		//暂停与继续
+		mouseHover:function(){
+			var that = this;
+			this.ul.hover(function(){
+				clearInterval(that.timer);
+			},function(){
+				that.auto();
+			});
+		}
+		
+	}
+
 	//调用初始化函数
+	right.init();
+	hideTop.init();
 	indexTop.init();
 	carousel.init();
+	indexBottom.init();
 });
 
 
 //对搜索的数据进行处理
 function searchDataHandle(result){
-	var temp = $('.search-data');
+	var temp = $('.logoBox .search-data');
+	var content = '';
+	for(var i=0; i<result.s.length; i++){
+		content += "<li><a href='#'>" + result.s[i] + "</a></li>";
+	}
+	if(result.s.length==0){
+		temp.css({
+			border: 0
+		});
+	}else{
+		temp.css({
+			border: "1px solid #ccc"
+		});
+	}
+	temp.html(content);
+}
+
+//对搜索的数据进行处理
+function searchDataHandle1(result){
+	var temp = $('.hideSearchBox .search-data');
 	var content = '';
 	for(var i=0; i<result.s.length; i++){
 		content += "<li><a href='#'>" + result.s[i] + "</a></li>";

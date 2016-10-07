@@ -33,6 +33,239 @@ a {
   color: #000;
 }
 
+/*隐藏的搜索栏*/
+.hideSearchContainer {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  z-index: 10;
+  height: 50px;
+  width: 100%;
+  background-color: #dd2526;
+}
+.hideSearchContainer .hideSearchBox {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.hideSearchContainer .hideSearchBox .aa1 {
+  width: 261px;
+  height: 40px;
+  float: left;
+  margin-right: 55px;
+  padding-top: 5px;
+}
+.hideSearchContainer .hideSearchBox .aa1 img {
+  width: 261px;
+  height: 40px;
+}
+.hideSearchContainer .hideSearchBox form {
+  width: 722px;
+  float: left;
+  padding-top: 8px;
+  position: relative;
+}
+.hideSearchContainer .hideSearchBox form .top-sesarchTxt {
+  outline: none;
+  width: 590px;
+  height: 32px;
+  border: 0;
+  border-right: 0;
+  float: left;
+  text-indent: 10px;
+}
+.hideSearchContainer .hideSearchBox form .top-search {
+  width: 72px;
+  height: 34px;
+  float: left;
+  text-align: center;
+  line-height: 34px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #cf000d;
+  cursor: pointer;
+}
+.hideSearchContainer .hideSearchBox form .search-data {
+  width: 588px;
+  background: white;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 14px;
+  z-index: 5;
+}
+.hideSearchContainer .hideSearchBox form .search-data li {
+  height: 20px;
+  line-height: 20px;
+  text-indent: 5px;
+  font-size: 12px;
+}
+.hideSearchContainer .hideSearchBox form .search-data li a {
+  color: #666;
+}
+.hideSearchContainer .hideSearchBox form .search-data .topliactive {
+  background: #459bfb;
+}
+.hideSearchContainer .hideSearchBox form .search-data .topliactive a {
+  color: #000;
+}
+
+.rightContainer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  width: 32px;
+  height: 100%;
+  background-color: #eaeaea;
+}
+.rightContainer .rightBox {
+  position: absolute;
+  top: 27%;
+  left: 0;
+}
+.rightContainer .rightBox .divbox {
+  position: relative;
+  width: 32px;
+  text-align: center;
+  cursor: pointer;
+  color: #c40000;
+}
+.rightContainer .rightBox .divbox:hover {
+  background-color: #c40000;
+  color: #fff;
+}
+.rightContainer .rightBox .jshideBox {
+  position: absolute;
+  left: -160px;
+  top: 0;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #444;
+  display: none;
+}
+.rightContainer .rightBox .jshideBox a {
+  font-size: 12px;
+  color: #fff;
+}
+.rightContainer .rightBox .jshideBox span {
+  position: absolute;
+  left: 110px;
+  top: 16px;
+  border: 5px solid transparent;
+  border-left-color: #444;
+}
+.rightContainer .rightBox .rightUserCenter {
+  height: 39px;
+  line-height: 39px;
+}
+.rightContainer .rightBox .rightCart {
+  padding-top: 14px;
+  height: 78px;
+}
+.rightContainer .rightBox .rightCart .gouwuchefont {
+  display: block;
+  width: 20px;
+  height: 60px;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.rightContainer .rightBox .rightQuan {
+  height: 39px;
+  line-height: 39px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.rightContainer .rightBox .rightSave {
+  height: 39px;
+  line-height: 39px;
+}
+.rightContainer .rightBox .rightqrCode {
+  height: 39px;
+  line-height: 39px;
+}
+.rightContainer .rightBox .rightqrCode .jshideBox1 {
+  position: absolute;
+  left: -250px;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #444;
+  display: none;
+}
+.rightContainer .rightBox .rightqrCode .jshideBox1 a {
+  font-size: 12px;
+  color: #fff;
+}
+.rightContainer .rightBox .rightqrCode .jshideBox1 a img {
+  width: 200px;
+  height: 200px;
+}
+.rightContainer .rightBox .rightqrCode .jshideBox1 span {
+  position: absolute;
+  left: 199px;
+  top: 16px;
+  border: 5px solid transparent;
+  border-left-color: #fff;
+  z-index: 11;
+}
+.rightContainer .rightBox .rightBang {
+  height: 39px;
+  line-height: 39px;
+}
+.rightContainer .rightBox .rightBang .jshideBox2 {
+  position: absolute;
+  left: -280px;
+  top: 0;
+  width: 230px;
+  height: 140px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #444;
+  display: none;
+}
+.rightContainer .rightBox .rightBang .jshideBox2 a {
+  font-size: 12px;
+  color: #fff;
+}
+.rightContainer .rightBox .rightBang .jshideBox2 a img {
+  width: 230px;
+  height: 140px;
+}
+.rightContainer .rightBox .rightBang .jshideBox2 span {
+  position: absolute;
+  left: 230px;
+  top: 16px;
+  border: 5px solid transparent;
+  border-left-color: #fff;
+}
+.rightContainer .rightBox .rightBang .icon-zan {
+  font-size: 22px;
+}
+.rightContainer .rightBox .rightOnline {
+  height: 39px;
+  line-height: 39px;
+  margin-bottom: 70px;
+}
+.rightContainer .rightBox .rightAdvice {
+  height: 39px;
+  line-height: 39px;
+}
+.rightContainer .rightBox .rightAdvice .icon-edit {
+  font-size: 22px;
+}
+.rightContainer .rightBox .rightToTop {
+  height: 39px;
+  line-height: 39px;
+}
+
 /*
 	购酒网top 
  */
@@ -975,8 +1208,144 @@ html {
   transition: left 1s ease 0s;
 }
 
-.place {
-  height: 6000px;
+/*页面脚部*/
+.footContainer {
+  height: 344px;
+  background-color: #414141;
+}
+.footContainer .footBox {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.footContainer .footBox .foot-top {
+  height: 119px;
+  width: 1150px;
+  margin: 0 auto;
+  border-bottom: 1px solid #797979;
+}
+.footContainer .footBox .foot-top .foot-tel, .footContainer .footBox .foot-top .online {
+  float: left;
+}
+.footContainer .footBox .foot-top .foot-tel {
+  width: 301px;
+  height: 75px;
+  padding-top: 26px;
+  margin-right: 22px;
+}
+.footContainer .footBox .foot-top .online {
+  cursor: pointer;
+  padding-top: 60px;
+  width: 176px;
+  height: 32px;
+}
+.footContainer .footBox .foot-top .footqrCode {
+  float: right;
+  width: 319px;
+  height: 119px;
+}
+.footContainer .footBox .foot-top .footqrCode p {
+  padding-top: 25px;
+  float: right;
+  width: 175px;
+  height: 94px;
+  font-size: 12px;
+  text-align: right;
+  color: #fff;
+  line-height: 18px;
+}
+.footContainer .footBox .foot-top .footqrCode img {
+  padding-top: 8px;
+  width: 105px;
+  width: 105px;
+  float: right;
+  margin-left: 20px;
+}
+.footContainer .footBox .foot-bot {
+  height: 183px;
+  width: 1060px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #a9a9a9;
+  padding: 38px 0 0 90px;
+}
+.footContainer .footBox .foot-bot a {
+  color: #a9a9a9;
+  display: block;
+}
+.footContainer .footBox .foot-bot li {
+  width: 170px;
+  height: 100%;
+  float: left;
+}
+.footContainer .footBox .foot-bot li div {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.footContainer .footBox .foot-bot li a {
+  margin-bottom: 9px;
+}
+.footContainer .footBox .foot-bot .hezuo a {
+  color: #fff703;
+}
+
+/*页面最底部*/
+.indexBotContainer {
+  height: 196px;
+}
+.indexBotContainer .indexBotBox {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.indexBotContainer .indexBotBox .xiaoche {
+  height: 84px;
+  background: url(../img/baozheng_06.jpg) no-repeat center;
+}
+.indexBotContainer .indexBotBox .bot-carousel {
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.indexBotContainer .indexBotBox .bot-carousel ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+.indexBotContainer .indexBotBox .bot-carousel ul li {
+  color: #676767;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 32px;
+}
+.indexBotContainer .indexBotBox .bot-carousel ul li a {
+  padding: 0 7px;
+  color: #303030;
+  border-right: 1px solid #97648f;
+}
+.indexBotContainer .indexBotBox .bot-carousel ul li a:hover {
+  color: #c40000;
+}
+.indexBotContainer .indexBotBox .bot-carousel ul li .more {
+  border-right: 0;
+}
+.indexBotContainer .indexBotBox p {
+  font-size: 12px;
+  height: 24px;
+  color: #6d6b76;
+  line-height: 24px;
+  text-align: center;
+}
+.indexBotContainer .indexBotBox .bot {
+  margin-top: 10px;
+  height: 48px;
+}
+.indexBotContainer .indexBotBox .bot img {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=indexTop.css.map */
