@@ -64,6 +64,156 @@ $(function(){
 		}
 	}
 
+	/*左侧边栏*/
+	var left = {
+		init:function(){
+			this.leftBoxContainer = $('.leftBoxContainer');
+			this.leftBoxItem = this.leftBoxContainer.find('.leftBox-item');
+
+			this.hideOrShow();
+			this.toFloor();
+		},
+
+		hideOrShow:function(){
+			var that = this;
+			this.contorlshow();//刷新也出现
+			/*$(window).scroll(function(){
+				that.contorlshow();
+			});
+*/
+			$(window).bind("scroll resize",function(){
+				that.contorlshow();
+			})
+		},
+		//控制出现
+		contorlshow:function(){
+			var that = this;
+			var scrollTop = $('body').scrollTop();
+				if( scrollTop >= 580 ){
+					this.leftBoxContainer.stop(true).fadeIn(300);
+					if( scrollTop < 1720 ){
+						this.leftBoxItem.eq(0).siblings().removeClass('now');
+						this.leftBoxItem.eq(1).siblings().removeClass('now');
+					}
+					else if( scrollTop >= 1720 && scrollTop < 2259 ){
+						//1楼
+						//
+						//寻找其余有now的加上prev去掉now，当前加上now
+						//
+						//滑过直接加now和prev 接着去掉之前的now
+						
+						this.leftBoxItem.eq(0).addClass('now prev');
+						this.leftBoxItem.eq(0).siblings('.now.prev').removeClass('now');
+
+						this.yundong( this.leftBoxItem.eq(0).siblings('.prev') , this.leftBoxItem.eq(0) , 0)
+						
+						
+					}else if( scrollTop >= 2259 && scrollTop < 2799 ){
+						//2楼
+						
+						this.leftBoxItem.eq(1).addClass('now prev');
+						this.leftBoxItem.eq(1).siblings('.now.prev').removeClass('now');
+						this.yundong( this.leftBoxItem.eq(1).siblings('.prev') , this.leftBoxItem.eq(1) ,1 );
+						
+						
+
+					}else if( scrollTop >= 2799 && scrollTop < 3339 ){
+						//3楼
+						
+						this.leftBoxItem.eq(2).addClass('now prev');
+						this.leftBoxItem.eq(2).siblings('.now.prev').removeClass('now');
+						this.yundong( this.leftBoxItem.eq(2).siblings('.prev') , this.leftBoxItem.eq(2) , 2);
+					
+						
+						
+					}else if( scrollTop >= 3339 && scrollTop < 3869 ){
+						//4楼
+
+						this.leftBoxItem.eq(3).addClass('now prev');
+						this.leftBoxItem.eq(3).siblings('.now.prev').removeClass('now');
+						this.yundong( this.leftBoxItem.eq(3).siblings('.prev') , this.leftBoxItem.eq(3) ,3);
+					
+						
+					}else if( scrollTop >= 3869 && scrollTop < 4299 ){
+						//5楼
+						
+						
+						this.leftBoxItem.eq(4).addClass('now prev');
+						this.leftBoxItem.eq(4).siblings('.now.prev').removeClass('now');
+						this.yundong( this.leftBoxItem.eq(4).siblings('.prev') , this.leftBoxItem.eq(4) ,4);
+						
+						
+
+					}else{
+						//6楼;
+						
+						this.leftBoxItem.eq(5).addClass('now prev');
+						this.leftBoxItem.eq(5).siblings('.now.prev').removeClass('now');
+						this.yundong( this.leftBoxItem.eq(5).siblings('.prev') , this.leftBoxItem.eq(5), 5);
+						
+						
+						
+					}
+				}else{
+					this.leftBoxContainer.stop(true).fadeOut(300);
+				}
+		},
+
+
+		//点击跳转
+		toFloor:function(){
+			this.leftBoxItem.click(function(){
+				var body = $('body');
+				var top = $(this).data('topvalue');
+				body.stop(true).animate({
+					scrollTop: top
+				});
+
+				//点击  	
+				//			别的去掉now，自己加上now
+				//			
+				//	带prev的先now的后		前一个
+				//								floor-item运动到left：-22  leftHideBox运动到left：0
+				//							当前 
+				//								floor-item运动到left：-22  leftHideBox运动到left：0
+				//						当前变成前一个
+				//			当前加上prev
+				//
+				//	
+				
+
+
+				/*var th = $(this).find('.floor-item');
+				
+				th.parent().find('.floor-item.now').stop(true).animate({
+					left: -22
+				},function(){
+					$(this).find('.leftHideBox').stop(true).animate({
+						left: 0
+					});
+				});
+				th.addClass('now');*/
+			});
+		},
+		
+		//控制运动的运动函数
+		yundong:function(prev,now,n){
+			//两个参数都是代理对象
+			var that = this;
+			prev.find('.leftHideBox').stop(true,true).animate({left:-23},200,function(){
+				prev.find('.floor-item').stop(true).animate({left:0},200);
+			});
+			
+
+			now.find('.floor-item').stop(true,true).animate({left:-23},200,function(){
+				now.find('.leftHideBox').stop(true).animate({left:0},200,function(){
+					that.leftBoxItem.eq(n).siblings('.prev').removeClass('prve');
+				})
+			});
+			
+		}
+	}
+
 	/*限时促销区*/
 	var timeShow = {
 		init:function(){
@@ -704,6 +854,7 @@ $(function(){
 
 
 	buyRecommed.init();
+	left.init();
 	timeShow.init();
 	gifShow.init();
 	floor1carousel.init();

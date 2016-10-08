@@ -1,0 +1,113 @@
+@charset "UTF-8";
+html, body, div, span,
+dl, dt, dd,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+p, pre, code,
+form, fieldset, legend,
+input, textarea,
+p, blockquote,
+th, td, hr,
+button, article, aside, details, figcaption,
+figure, footer, header, hgroup,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+body {
+  font-family: "瀹嬩綋";
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*头*/
+.headerContainer {
+  height: 90px;
+  border-bottom: 1px solid #c5c5c5;
+}
+.headerContainer .headerBox {
+  margin: 0 auto;
+  width: 980px;
+  height: 100%;
+  font-size: 12px;
+  color: #323232;
+}
+.headerContainer .headerBox .logo {
+  padding-top: 16px;
+  float: left;
+}
+.headerContainer .headerBox .headBox-right {
+  width: 287px;
+  padding-top: 24px;
+  height: 66px;
+  float: right;
+}
+.headerContainer .headerBox .headBox-right .onLineMan {
+  width: 50px;
+  height: 30px;
+  float: right;
+  display: block;
+  line-height: 30px;
+  position: relative;
+  padding-left: 20px;
+}
+.headerContainer .headerBox .headBox-right .onLineMan span {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/loginIcon.gif) no-repeat -25px -1px;
+}
+.headerContainer .headerBox .headBox-right .headHelp {
+  width: 56px;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  padding-left: 28px;
+  position: relative;
+}
+.headerContainer .headerBox .headBox-right .headHelp span {
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/loginIcon.gif) no-repeat -1px -1px;
+}
+.headerContainer .headerBox .headBox-right p {
+  width: 132px;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  background-color: #c8c8c8;
+  text-align: center;
+}
+
+/*内容*/
+.contentCotainer {
+  height: 581px;
+}
+.contentCotainer .contentBox {
+  width: 980px;
+  height: 581px;
+  margin: 0 auto;
+}
+.contentCotainer .contentBox .logoiMG1 {
+  float: left;
+}
+
+/*# sourceMappingURL=login.css.map */

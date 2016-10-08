@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*gif图的轮播*/
 .gifShowContainer {
   height: 192px;
 }
@@ -74,6 +75,74 @@
   right: 0;
 }
 
+/*左侧边栏*/
+.leftBoxContainer {
+  position: fixed;
+  top: 27%;
+  left: -22px;
+  width: 44px;
+  height: 308px;
+  display: none;
+}
+.leftBoxContainer .leftBox {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.leftBoxContainer .leftBox .leftBox-item {
+  width: 44px;
+  height: 44px;
+  display: block;
+  position: relative;
+  color: #ccc;
+  background-color: #fafafa;
+}
+.leftBoxContainer .leftBox .leftBox-item .floor-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+.leftBoxContainer .leftBox .leftBox-item .leftHideBox {
+  position: absolute;
+  left: -22px;
+  top: 0;
+  font-size: 12px;
+  padding-top: 8px;
+  width: 44px;
+  height: 36px;
+  border: 1px solid #ccc;
+}
+.leftBoxContainer .leftBox .now {
+  color: #fff;
+}
+.leftBoxContainer .leftBox .now .leftHideBox {
+  background-color: #d7000e;
+}
+.leftBoxContainer .leftBox .toTop {
+  width: 44px;
+  height: 44px;
+  color: #ccc;
+  text-align: center;
+  line-height: 44px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+.leftBox {
+  text-align: center;
+}
+.leftBox .leftBox-item {
+  width: 44px;
+}
+
+/*限时闪购*/
 .timeShowContainer {
   height: 430px;
 }
@@ -241,7 +310,7 @@
   width: 1200px;
   height: 3440px;
   margin: 0 auto;
-  /*妤煎眰*/
+  /*楼层*/
 }
 .mainContainer .mainBox .buyRecommed {
   height: 454px;

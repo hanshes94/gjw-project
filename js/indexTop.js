@@ -62,6 +62,7 @@ $(function(){
 		}
 	}
 
+	/*右侧边栏*/
 	var right = {
 		init:function(){
 			this.rightBox = $('.rightBox');

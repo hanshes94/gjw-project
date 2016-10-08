@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import "reset";
+
+/*头*/
+.headerContainer {
+	height: 90px;
+	border-bottom: 1px solid #c5c5c5;
+	.headerBox {
+		margin: 0 auto;
+		width: 980px;
+		height: 100%;
+		font-size: 12px;
+		color:#323232;
+		
+		.logo {
+			padding-top: 16px;
+			float: left;
+		}
+		.headBox-right {
+			width:287px;
+			padding-top: 24px;
+			height: 66px;
+			float: right;
+			.onLineMan {
+				width: 50px;
+				height:30px;
+				float: right;
+				display: block;
+				line-height: 30px;
+				position: relative;
+				padding-left: 20px;
+				span {
+					position: absolute;
+					left: 0;
+					top: 7px;
+					width: 16px;
+					height: 16px;
+					background: url(../img/loginIcon.gif) no-repeat -25px -1px;
+				}
+			}
+
+			.headHelp {
+				width: 56px;
+				height: 30px;
+				float: left;
+				line-height: 30px;
+				padding-left: 28px;
+				position: relative;
+				span {
+					position: absolute;
+					left: 4px;
+					top: 7px;
+					width: 16px;
+					height: 16px;
+					background: url(../img/loginIcon.gif) no-repeat -1px -1px;
+				}
+				
+			}
+			p {
+				width: 132px;
+				height: 30px;
+				float: left;
+				line-height: 30px;
+				background-color: #c8c8c8;
+				text-align: center;
+			}
+			
+		}
+	}
+}
+
+/*内容*/
+.contentCotainer {
+	height: 581px;
+	.contentBox {
+		width: 980px;
+		height: 581px;
+		margin: 0 auto;
+		.logoiMG1 {
+			float: left;
+		}
+	}
+}
