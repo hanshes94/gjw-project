@@ -37,6 +37,9 @@ a {
 .headerContainer {
   height: 90px;
   border-bottom: 1px solid #c5c5c5;
+  background: #fff;
+  position: relative;
+  z-index: 88;
 }
 .headerContainer .headerBox {
   margin: 0 auto;
@@ -93,21 +96,295 @@ a {
   height: 30px;
   float: left;
   line-height: 30px;
-  background-color: #c8c8c8;
   text-align: center;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px -1000px;
+  }
+}
+@-moz-keyframes bg /* Firefox */ {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px -1000px;
+  }
+}
+@-webkit-keyframes bg /* Safari and Chrome */ {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px -1000px;
+  }
+}
+@-ms-keyframes bg /* Safari and Chrome */ {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px -1000px;
+  }
+}
+@-o-keyframes bg /* Safari and Chrome */ {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1000px -1000px;
+  }
+}
+body {
+  background: #f3f3f3 url(../img/login_bg.gif);
+  animation: bg 150s linear infinite;
+  -moz-animation: bg 150s linear infinite;
+  -webkit-animation: bg 150s linear infinite;
+  -o-animation: bg 150s linear infinite;
+}
+
+.focusclass {
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+  z-index: 10;
 }
 
 /*内容*/
 .contentCotainer {
+  width: 100%;
   height: 581px;
 }
 .contentCotainer .contentBox {
-  width: 980px;
-  height: 581px;
+  width: 950px;
+  height: 441px;
   margin: 0 auto;
+  padding: 70px 15px;
 }
 .contentCotainer .contentBox .logoiMG1 {
   float: left;
+  width: 436px;
+  height: 436px;
+}
+.contentCotainer .contentBox .logoiMG1 img {
+  width: 100%;
+  width: 100%;
+}
+.contentCotainer .contentBox .loginTxtBox {
+  float: left;
+  width: 488px;
+  height: 435px;
+  border: 1px solid #c5c5c5;
+  margin-left: 22px;
+  background-color: #fff;
+  position: relative;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop {
+  position: relative;
+  width: 433px;
+  height: 345px;
+  margin: 0 auto;
+  background: url(../img/dashed_bg_06.gif) repeat-x left bottom;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .usercom {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  width: 140px;
+  height: 24px;
+  -border: 1px solid #000;
+  color: #c40000;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  display: none;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .usercom i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop p {
+  position: relative;
+  height: 78px;
+  text-align: center;
+  line-height: 78px;
+  font-size: 12px;
+  color: #000;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop p span {
+  position: absolute;
+  left: 135px;
+  top: 28px;
+  width: 30px;
+  height: 26px;
+  background: url(../img/loginIcon.gif) no-repeat -94px -3px;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .box {
+  position: relative;
+  width: 348px;
+  height: 52px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 52px;
+  border: 1px solid #c5c5c5;
+  margin: 0 auto;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .box span {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  width: 18px;
+  height: 18px;
+  background: url(../img/loginIcon.gif) no-repeat;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .box input {
+  width: 260px;
+  height: 28px;
+  border: 0;
+  outline: none;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .text-item span {
+  background-position: -46px -2px;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .password-item {
+  border-top: 0;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .password-item span {
+  background-position: -72px -1px;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .checkBox {
+  width: 348px;
+  height: 45px;
+  padding-top: 15px;
+  border: 0;
+  margin: 0 auto;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .checkBox input {
+  position: relative;
+  float: left;
+  width: 102px;
+  height: 32px;
+  border: 1px solid #c5c5c5;
+  text-indent: 10px;
+  outline: none;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .checkBox img {
+  float: left;
+  margin: 0 5px;
+  height: 36px;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .checkBox a {
+  float: left;
+  font-size: 12px;
+  padding-top: 12px;
+  color: #000;
+  cursor: pointer;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .tick {
+  width: 330px;
+  height: 24px;
+  font-size: 12px;
+  color: #999;
+  margin: 0 auto;
+  line-height: 24px;
+  padding-left: 18px;
+  position: relative;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .tick a {
+  color: #999;
+  float: right;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .tick input {
+  position: absolute;
+  padding: 3px;
+  left: 0;
+  top: 6px;
+}
+.contentCotainer .contentBox .loginTxtBox .boxTop .subTxt {
+  margin: 0 auto;
+  width: 348px;
+  height: 40px;
+  border: 1px solid #dc0014;
+  background-color: #fe0a2e;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 10px;
+  font-family: "微软雅黑";
+  cursor: pointer;
+}
+.contentCotainer .contentBox .boxBot {
+  width: 348px;
+  height: 108px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.contentCotainer .contentBox .boxBot p {
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.contentCotainer .contentBox .boxBot .hezuohuban {
+  height: 80px;
+}
+.contentCotainer .contentBox .boxBot .hezuohuban a {
+  float: left;
+  width: 37px;
+  height: 37px;
+  margin-right: 10px;
+  background: url(../img/loginIcon.gif) no-repeat;
+}
+.contentCotainer .contentBox .boxBot .hezuohuban a:nth-child(1) {
+  background-position: -142px 0px;
+}
+.contentCotainer .contentBox .boxBot .hezuohuban a:nth-child(2) {
+  background-position: -194px 0px;
+}
+.contentCotainer .contentBox .boxBot .hezuohuban a:nth-child(3) {
+  background-position: -245px 0px;
+}
+.contentCotainer .contentBox .zhuce {
+  position: absolute;
+  right: 0;
+  top: 435px;
+  width: 113px;
+  height: 38px;
+  font-family: "微软雅黑";
+  cursor: pointer;
+  background-color: #fe0a2e;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 38px;
+}
+
+/*foot*/
+.foot {
+  height: 45px;
+  padding-top: 85px;
+  font-size: 12px;
+}
+.foot .yqLink {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.foot .yqLink a {
+  color: #333;
+}
+.foot .yqLink a:hover {
+  color: #c40000;
+}
+.foot .footcopy {
+  text-align: center;
 }
 
 /*# sourceMappingURL=login.css.map */

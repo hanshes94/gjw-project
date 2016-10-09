@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import "reset";
+
+/*头*/
+.headerContainer {
+	height: 90px;
+	border-bottom: 1px solid #c5c5c5;
+	background: #fff;
+	position: relative;
+	z-index: 88;
+	.headerBox {
+		margin: 0 auto;
+		width: 980px;
+		height: 100%;
+		font-size: 12px;
+		color:#323232;
+		
+		.logo {
+			padding-top: 16px;
+			float: left;
+		}
+		.headBox-right {
+			width:287px;
+			padding-top: 24px;
+			height: 66px;
+			float: right;
+			.loginLink {
+				color:#66afe9;
+			}
+			.onLineMan {
+				width: 50px;
+				height:30px;
+				float: right;
+				display: block;
+				line-height: 30px;
+				position: relative;
+				padding-left: 20px;
+				span {
+					position: absolute;
+					left: 0;
+					top: 7px;
+					width: 16px;
+					height: 16px;
+					background: url(../img/loginIcon.gif) no-repeat -25px -1px;
+				}
+			}
+
+			.headHelp {
+				width: 56px;
+				height: 30px;
+				float: left;
+				line-height: 30px;
+				padding-left: 28px;
+				position: relative;
+				span {
+					position: absolute;
+					left: 4px;
+					top: 7px;
+					width: 16px;
+					height: 16px;
+					background: url(../img/loginIcon.gif) no-repeat -1px -1px;
+				}
+				
+			}
+			p {
+				width: 132px;
+				height: 30px;
+				float: left;
+				line-height: 30px;
+				
+				text-align: center;
+			}
+			
+		}
+	}
+}
+
+@keyframes bg
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+
+@-moz-keyframes bg /* Firefox */
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+
+@-webkit-keyframes bg /* Safari and Chrome */
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+@-ms-keyframes bg /* Safari and Chrome */
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+@-o-keyframes bg /* Safari and Chrome */
+{
+	0%   {background-position:0 0; }
+	
+	100% {background-position:-1000px -1000px;}
+}
+
+body {
+	background:#f3f3f3 url(../img/login_bg.gif);
+	animation: bg 150s linear infinite;
+    -moz-animation: bg 150s linear infinite;
+    -webkit-animation: bg 150s linear infinite;
+    -o-animation: bg 150s linear infinite;
+}
+
+.focusclass {
+					border-color: #66afe9;
+					box-shadow: 0 0 5px #66afe9;
+					z-index: 10;
+				}
+
+/*内容*/
+.contentCotainer {
+	width: 100%;
+	height: 557px;
+	padding-top: 24px;
+	.contentBox {
+		width: 980px;
+		height: 581px;
+		
+		margin: 0 auto;
+		border: 7px solid #d7d7d7;
+		background-color: #fff;	
+		.contentBoxLeft {
+			float:left;
+			width: 600px;
+			height: 100%;
+		}
+		.imgBox {
+			float:left;
+			width: 332px;
+			height: 501px;
+			border-left: 1px solid #dcdcdc;
+			padding: 80px 0 0 35px;
+		}
+	}
+}
+
+
+/*foot*/
+.foot {
+	height: 45px;
+	padding-top: 85px;
+	font-size: 12px;
+	
+	.yqLink {
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		a {
+			color:#333;
+			&:hover {
+				color:#c40000;
+			}
+		}
+	}
+
+	.footcopy {
+		text-align: center;
+
+	}
+}

@@ -95,7 +95,7 @@ $(function(){
 						this.leftBoxItem.eq(0).siblings().removeClass('now');
 						this.leftBoxItem.eq(1).siblings().removeClass('now');
 					}
-					else if( scrollTop >= 1720 && scrollTop < 2259 ){
+					else if( scrollTop >= 1720 && scrollTop < 2255 ){
 						//1楼
 						//
 						//寻找其余有now的加上prev去掉now，当前加上now
@@ -108,7 +108,7 @@ $(function(){
 						this.yundong( this.leftBoxItem.eq(0).siblings('.prev') , this.leftBoxItem.eq(0) , 0)
 						
 						
-					}else if( scrollTop >= 2259 && scrollTop < 2799 ){
+					}else if( scrollTop >= 2255 && scrollTop < 2795 ){
 						//2楼
 						
 						this.leftBoxItem.eq(1).addClass('now prev');
@@ -117,7 +117,7 @@ $(function(){
 						
 						
 
-					}else if( scrollTop >= 2799 && scrollTop < 3339 ){
+					}else if( scrollTop >= 2795 && scrollTop < 3335 ){
 						//3楼
 						
 						this.leftBoxItem.eq(2).addClass('now prev');
@@ -126,7 +126,7 @@ $(function(){
 					
 						
 						
-					}else if( scrollTop >= 3339 && scrollTop < 3869 ){
+					}else if( scrollTop >= 3335 && scrollTop < 3865 ){
 						//4楼
 
 						this.leftBoxItem.eq(3).addClass('now prev');
@@ -134,7 +134,7 @@ $(function(){
 						this.yundong( this.leftBoxItem.eq(3).siblings('.prev') , this.leftBoxItem.eq(3) ,3);
 					
 						
-					}else if( scrollTop >= 3869 && scrollTop < 4299 ){
+					}else if( scrollTop >= 3865 && scrollTop < 4295 ){
 						//5楼
 						
 						
@@ -201,12 +201,12 @@ $(function(){
 			//两个参数都是代理对象
 			var that = this;
 			prev.find('.leftHideBox').stop(true,true).animate({left:-23},200,function(){
-				prev.find('.floor-item').stop(true).animate({left:0},200);
+				prev.find('.floor-item').stop(true,true).animate({left:0},200);
 			});
 			
 
 			now.find('.floor-item').stop(true,true).animate({left:-23},200,function(){
-				now.find('.leftHideBox').stop(true).animate({left:0},200,function(){
+				now.find('.leftHideBox').stop(true,true).animate({left:0},200,function(){
 					that.leftBoxItem.eq(n).siblings('.prev').removeClass('prve');
 				})
 			});
