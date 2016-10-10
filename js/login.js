@@ -30,8 +30,7 @@ $(function(){
 			this.subTxt.on('click',function(){
 				//var phoneReg = /^1[3-8]\d{9}$/;
 				//var pwdReg = /^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,20}$/;
-				//var emailReg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
-				
+				//var emailReg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;				
 				//that.userAjax( "css/user.json" , that.zhanghao );
 
 				$.ajax({
@@ -43,7 +42,8 @@ $(function(){
 						var num = that.inputs.eq(2).next().data('num');
 						var userPassTan = that.contentBox.find(".userPassTan");
 						var checkBox = that.contentBox.find(".tick input")[0];//容易忘记要转成js对象
-						if(result[txt]){
+						if(result[txt]){//用户名是否存在
+
 							if(pwd == ""){//密码不为空
 								userPassTan.stop(true).show(500);
 							}else if( pwd != result[txt] ){//密码不正确
@@ -54,13 +54,10 @@ $(function(){
 									that.userData = {
 										username:txt,
 										password:pwd
-									} 
-									that.setCookie();
-									
+									}
+									that.setCookie();	
 								}
-								
 							}
-
 						}else{
 							var userTan = that.contentBox.find(".userTan");
 							userTan.stop(true).show(500);

@@ -153,7 +153,11 @@ body {
 .focusclass {
   border-color: #66afe9;
   box-shadow: 0 0 5px #66afe9;
-  z-index: 10;
+}
+
+.trueclass {
+  border-color: green;
+  box-shadow: 0 0 5px green;
 }
 
 /*内容*/
@@ -174,7 +178,409 @@ body {
   width: 600px;
   height: 100%;
 }
-.contentCotainer .contentBox .imgBox {
+.contentCotainer .contentBox .contentBoxLeft .navBox {
+  position: relative;
+  width: 516px;
+  height: 54px;
+  margin: 0 auto;
+  padding-top: 32px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 32px;
+}
+.contentCotainer .contentBox .contentBoxLeft .navBox .bgBox {
+  position: absolute;
+  left: 0;
+  top: 85px;
+  width: 258px;
+  height: 7px;
+  background: url(../img/loginIcon.gif) no-repeat 0px -37px;
+}
+.contentCotainer .contentBox .contentBoxLeft .navBox .zz {
+  position: relative;
+  width: 258px;
+  height: 23px;
+  float: left;
+  text-align: center;
+  line-height: 23px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .navBox .zz span {
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .navBox .phone {
+  width: 257px;
+  border-right: 1px solid #ddd;
+}
+.contentCotainer .contentBox .contentBoxLeft .navBox .phone span {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  width: 15px;
+  height: 24px;
+  background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+}
+.contentCotainer .contentBox .contentBoxLeft .navBox .email span {
+  position: absolute;
+  left: 75px;
+  top: 0;
+  width: 19px;
+  height: 24px;
+  background: url(../img/loginIcon.gif) no-repeat -413px -5px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox {
+  position: relative;
+  width: 600px;
+  height: 430px;
+  overflow: hidden;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox input {
+  outline: none;
+  border: 0;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 430;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul li {
+  width: 600px;
+  height: 430px;
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce {
+  font-size: 12px;
+  color: #969696;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .com {
+  padding-left: 18px;
+  width: 330px;
+  height: 52px;
+  border: 1px solid #c5c5c5;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .com label {
+  display: block;
+  height: 52px;
+  width: 60px;
+  line-height: 52px;
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .com input {
+  float: left;
+  width: 250px;
+  margin-top: 19px;
+  text-indent: 10px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .phoneBox {
+  position: relative;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .phoneBox .inputTips {
+  color: #c40000;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: none;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .phoneBox .inputTips i {
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .setpass {
+  position: relative;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .setpass .inputTips {
+  color: #c40000;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: none;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .setpass .inputTips i {
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkPassword {
+  position: relative;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkPassword .inputTips {
+  color: #c40000;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: none;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkPassword .inputTips i {
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkBoxCode {
+  width: 348px;
+  height: 52px;
+  -border: 1px solid #c5c5c5;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkBoxCode .checkBoxCode-item {
+  width: 151px;
+  height: 52px;
+  line-height: 52px;
+  border: 1px solid #c5c5c5;
+  padding-left: 18px;
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkBoxCode .checkBoxCode-item label {
+  display: block;
+  height: 52px;
+  width: 50px;
+  line-height: 52px;
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkBoxCode .checkBoxCode-item input {
+  float: left;
+  width: 80px;
+  margin-top: 19px;
+  text-indent: 10px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkBoxCode img {
+  float: left;
+  width: 124px;
+  height: 52px;
+  margin: 0 5px 0 10px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .checkBoxCode .changeAnother {
+  float: left;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .p_jiayanCodebox label {
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .p_jiayanCodebox .phoneImg {
+  width: 15px;
+  height: 24px;
+  margin: 14px 10px 0 24px;
+  background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .p_jiayanCodebox .p_jiayanCodeClick {
+  width: 76px;
+  height: 31px;
+  border: 1px solid #ddd;
+  float: left;
+  text-align: center;
+  line-height: 31px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: linear-gradient(#fff, #f3f3f3);
+  background: -webkit-linear-gradient(#fff, #f3f3f3);
+  background: -ms-linear-gradient(#fff, #f3f3f3);
+  background: -moz-linear-gradient(#fff, #f3f3f3);
+  background: -o-linear-gradient(#fff, #f3f3f3);
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .p_jiayanCodebox input {
+  float: left;
+  width: 102px;
+  height: 34px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .userXieYi {
+  width: 348px;
+  height: 24px;
+  color: #333;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .userXieYi a {
+  color: #325e8f;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .phonezhuce .p_zhuceBtn {
+  width: 348px;
+  height: 40px;
+  color: #fff;
+  margin: 5px auto;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #fc4c4b;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce {
+  font-size: 12px;
+  color: #969696;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .com {
+  padding-left: 18px;
+  width: 330px;
+  height: 52px;
+  border: 1px solid #c5c5c5;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .com span {
+  color: #c30000;
+  float: left;
+  padding-top: 17px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .com label {
+  display: block;
+  height: 52px;
+  width: 60px;
+  line-height: 52px;
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .com input {
+  float: left;
+  width: 250px;
+  margin-top: 19px;
+  text-indent: 10px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .rma {
+  position: relative;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .rma .inputTips {
+  color: #c40000;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: none;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .rma .inputTips i {
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-setpass {
+  position: relative;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-setpass .inputTips {
+  color: #c40000;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: none;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-setpass .inputTips i {
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkPassword {
+  position: relative;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkPassword .inputTips {
+  color: #c40000;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: none;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkPassword .inputTips i {
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .checke {
+  position: relative;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .checke .inputTips {
+  color: #c40000;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: none;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .checke .inputTips i {
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkBoxCode {
+  width: 348px;
+  height: 52px;
+  -border: 1px solid #c5c5c5;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkBoxCode .e-checkBoxCode-item {
+  width: 151px;
+  height: 52px;
+  line-height: 52px;
+  border: 1px solid #c5c5c5;
+  padding-left: 18px;
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkBoxCode .e-checkBoxCode-item label {
+  display: block;
+  height: 52px;
+  width: 50px;
+  line-height: 52px;
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkBoxCode .e-checkBoxCode-item input {
+  float: left;
+  width: 80px;
+  margin-top: 19px;
+  text-indent: 10px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkBoxCode img {
+  float: left;
+  width: 124px;
+  height: 52px;
+  margin: 0 5px 0 10px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e-checkBoxCode .e-changeAnother {
+  float: left;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .p_jiayanCodebox label {
+  float: left;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .p_jiayanCodebox .phoneImg {
+  width: 15px;
+  height: 24px;
+  margin: 14px 10px 0 24px;
+  background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .p_jiayanCodebox .p_jiayanCodeClick {
+  width: 76px;
+  height: 31px;
+  border: 1px solid #ddd;
+  float: left;
+  text-align: center;
+  line-height: 31px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: linear-gradient(#fff, #f3f3f3);
+  background: -webkit-linear-gradient(#fff, #f3f3f3);
+  background: -ms-linear-gradient(#fff, #f3f3f3);
+  background: -moz-linear-gradient(#fff, #f3f3f3);
+  background: -o-linear-gradient(#fff, #f3f3f3);
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .p_jiayanCodebox input {
+  float: left;
+  width: 102px;
+  height: 34px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .userXieYi {
+  width: 348px;
+  height: 24px;
+  color: #333;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .userXieYi a {
+  color: #325e8f;
+}
+.contentCotainer .contentBox .contentBoxLeft .aniBox ul .emailzhuce .e_zhuceBtn {
+  width: 348px;
+  height: 40px;
+  color: #fff;
+  margin: 5px auto;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #fc4c4b;
+}
+.contentCotainer .imgBox {
   float: left;
   width: 332px;
   height: 501px;

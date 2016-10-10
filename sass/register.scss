@@ -117,10 +117,16 @@ body {
 }
 
 .focusclass {
-					border-color: #66afe9;
-					box-shadow: 0 0 5px #66afe9;
-					z-index: 10;
-				}
+		border-color: #66afe9;
+		box-shadow: 0 0 5px #66afe9;
+					
+}
+
+.trueclass {
+	border-color: green;
+		box-shadow: 0 0 5px green;
+}
+
 
 /*内容*/
 .contentCotainer {
@@ -138,6 +144,439 @@ body {
 			float:left;
 			width: 600px;
 			height: 100%;
+			.navBox {
+				position: relative;
+				width:516px;
+				height: 54px;
+				margin: 0 auto;
+				padding-top: 32px;
+				border-bottom: 1px solid #ddd;
+				margin-bottom: 32px;
+				.bgBox {
+					position: absolute;
+					left: 0;
+					top: 85px;
+					width: 258px;
+					height: 7px;
+					background: url(../img/loginIcon.gif) no-repeat 0px -37px;
+
+				}
+				.zz {
+
+					position: relative;
+					width: 258px;
+					height: 23px;
+					float: left;
+					text-align: center;
+					line-height: 23px;
+					font-size: 14px;
+					cursor: pointer;
+					span {
+						cursor: pointer;
+					}
+				}
+				.phone {
+					width: 257px;
+					border-right:1px solid #ddd ;
+					span {
+						position: absolute;
+						left: 80px;
+						top: 0;
+						width: 15px;
+						height: 24px;
+						background:url(../img/loginIcon.gif) no-repeat -387px -5px;
+					}
+				}
+				.email {
+					span {
+						position: absolute;
+						left: 75px;
+						top: 0;
+						width: 19px;
+						height: 24px;
+						background:url(../img/loginIcon.gif) no-repeat -413px -5px;
+					}
+				}
+			}
+			.aniBox {
+				position: relative;
+				width: 600px;
+				height: 430px;
+				overflow: hidden;
+				input {
+					outline: none;
+					border: 0;
+				}
+				ul {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 1200px;
+					height: 430;
+
+					li {
+						width: 600px;
+						height: 430px;
+						float: left;
+					}
+					.phonezhuce {
+						font-size: 12px;
+						color:#969696;
+						.com {
+							padding-left: 18px;
+							width: 330px;
+							height: 52px;
+							border: 1px solid #c5c5c5;
+							margin: 0 auto;
+							margin-top: 5px;
+							margin-bottom: 12px;
+							label {
+								display: block;
+								height:52px;
+								width: 60px;
+								line-height: 52px;
+								float: left;
+
+							}
+							input {
+
+								float: left;
+								width: 250px;
+								margin-top: 19px;
+								text-indent: 10px;
+							}
+						}
+						.phoneBox {
+							position: relative;
+							.inputTips {
+								color:#c40000;
+								position: absolute;
+								top: 20px;
+								right:5px;
+								display: none;
+								i {
+									cursor: pointer;
+								}
+							}
+						}
+						.setpass {
+							position: relative;
+							.inputTips {
+								color:#c40000;
+								position: absolute;
+								top: 20px;
+								right:5px;
+								display: none;
+								i {
+									cursor: pointer;
+								}
+							}
+						}
+
+						.checkPassword {
+							position: relative;
+							.inputTips {
+								color:#c40000;
+								position: absolute;
+								top: 20px;
+								right:5px;
+								display: none;
+								i {
+									cursor: pointer;
+								}
+							}
+						}
+
+						.checkBoxCode {
+							
+							width: 348px;
+							height: 52px;
+							-border: 1px solid #c5c5c5;
+							margin: 0 auto;
+							margin-bottom: 12px;
+							.checkBoxCode-item {
+								width: 151px;
+								height: 52px;
+								line-height: 52px;
+								border: 1px solid #c5c5c5;
+								padding-left: 18px;
+								float: left;
+								label {
+									display: block;
+									height:52px;
+									width: 50px;
+									line-height: 52px;
+									float: left;
+
+								}
+								input {
+
+									float: left;
+									width: 80px;
+									margin-top: 19px;
+									text-indent: 10px;
+								}
+							}
+							img {
+								float: left;
+								width: 124px;
+								height: 52px;
+								margin: 0 5px 0 10px;
+							}
+							.changeAnother{
+								float: left;
+								padding:20px 0px;
+								cursor: pointer;
+							}
+						}
+						.p_jiayanCodebox{
+							label {
+								float: left;
+							}
+							.phoneImg {
+								width: 15px;
+								height: 24px;
+								margin: 14px 10px 0 24px;
+								background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+							}
+							.p_jiayanCodeClick {
+								width: 76px;
+								height: 31px;
+								border:1px solid #ddd;
+								float: left;
+								text-align: center;
+								line-height: 31px;
+								margin-top: 10px;
+								cursor: pointer;
+								background: linear-gradient(#fff,#f3f3f3);
+							    background: -webkit-linear-gradient(#fff,#f3f3f3);
+							    background: -ms-linear-gradient(#fff,#f3f3f3);
+							    background: -moz-linear-gradient(#fff,#f3f3f3);
+							    background: -o-linear-gradient(#fff,#f3f3f3);
+							}
+							input {
+								float: left;
+								width: 102px;
+								height: 34px;
+								border:1px solid #ddd;
+								margin-top: 10px;
+							}
+						}
+						.userXieYi {
+							
+							width: 348px;
+							height: 24px;
+							color: #333;
+							margin: 0 auto;
+							margin-bottom: 12px;
+
+							a {
+								color:#325e8f;
+							}
+						}
+						.p_zhuceBtn {
+							width: 348px;
+							height: 40px;
+							color: #fff;
+							margin: 5px auto;
+							text-align: center;
+							line-height: 40px;
+							cursor: pointer;
+							font-size: 20px;
+							background-color: #fc4c4b;
+						}
+
+					}
+
+					.emailzhuce {
+						font-size: 12px;
+						color:#969696;
+						.com {
+							padding-left: 18px;
+							width: 330px;
+							height: 52px;
+							border: 1px solid #c5c5c5;
+							margin: 0 auto;
+							margin-top: 5px;
+							margin-bottom: 12px;
+							span {
+								color:#c30000;
+								float: left;
+								padding-top: 17px;
+							}
+							label {
+								display: block;
+								height:52px;
+								width: 60px;
+								line-height: 52px;
+								float: left;
+
+							}
+							input {
+
+								float: left;
+								width: 250px;
+								margin-top: 19px;
+								text-indent: 10px;
+							}
+						}
+
+						.rma {
+							position: relative;
+							.inputTips {
+								color:#c40000;
+								position: absolute;
+								top: 20px;
+								right:5px;
+								display: none;
+								i {
+									cursor: pointer;
+								}
+							}
+						}
+						.e-setpass{
+							position: relative;
+							.inputTips {
+								color:#c40000;
+								position: absolute;
+								top: 20px;
+								right:5px;
+								display: none;
+								i {
+									cursor: pointer;
+								}
+							}
+						}
+						.e-checkPassword{
+							position: relative;
+							.inputTips {
+								color:#c40000;
+								position: absolute;
+								top: 20px;
+								right:5px;
+								display: none;
+								i {
+									cursor: pointer;
+								}
+							}
+						}
+						.checke {
+							position: relative;
+							.inputTips {
+								color:#c40000;
+								position: absolute;
+								top: 20px;
+								right:5px;
+								display: none;
+								i {
+									cursor: pointer;
+								}
+							}
+						}
+						.e-checkBoxCode {
+							
+							width: 348px;
+							height: 52px;
+							-border: 1px solid #c5c5c5;
+							margin: 0 auto;
+							margin-bottom: 12px;
+							.e-checkBoxCode-item {
+								width: 151px;
+								height: 52px;
+								line-height: 52px;
+								border: 1px solid #c5c5c5;
+								padding-left: 18px;
+								float: left;
+								label {
+									display: block;
+									height:52px;
+									width: 50px;
+									line-height: 52px;
+									float: left;
+
+								}
+								input {
+
+									float: left;
+									width: 80px;
+									margin-top: 19px;
+									text-indent: 10px;
+								}
+							}
+							img {
+								float: left;
+								width: 124px;
+								height: 52px;
+								margin: 0 5px 0 10px;
+							}
+							.e-changeAnother{
+								float: left;
+								padding:20px 0px;
+								cursor: pointer;
+							}
+						}
+						.p_jiayanCodebox{
+							label {
+								float: left;
+							}
+							.phoneImg {
+								width: 15px;
+								height: 24px;
+								margin: 14px 10px 0 24px;
+								background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+							}
+							.p_jiayanCodeClick {
+								width: 76px;
+								height: 31px;
+								border:1px solid #ddd;
+								float: left;
+								text-align: center;
+								line-height: 31px;
+								margin-top: 10px;
+								cursor: pointer;
+								background: linear-gradient(#fff,#f3f3f3);
+							    background: -webkit-linear-gradient(#fff,#f3f3f3);
+							    background: -ms-linear-gradient(#fff,#f3f3f3);
+							    background: -moz-linear-gradient(#fff,#f3f3f3);
+							    background: -o-linear-gradient(#fff,#f3f3f3);
+							}
+							input {
+								float: left;
+								width: 102px;
+								height: 34px;
+								border:1px solid #ddd;
+								margin-top: 10px;
+							}
+						}
+						.userXieYi {
+							
+							width: 348px;
+							height: 24px;
+							color: #333;
+							margin: 0 auto;
+							margin-bottom: 12px;
+							a {
+								color:#325e8f;
+							}
+						}
+						.e_zhuceBtn {
+							width: 348px;
+							height: 40px;
+							color: #fff;
+							margin: 5px auto;
+							text-align: center;
+							line-height: 40px;
+							cursor: pointer;
+							font-size: 20px;
+							background-color: #fc4c4b;
+						}
+
+					}
+				}
+
+
+				}
+			}
 		}
 		.imgBox {
 			float:left;
@@ -146,8 +585,9 @@ body {
 			border-left: 1px solid #dcdcdc;
 			padding: 80px 0 0 35px;
 		}
+
 	}
-}
+
 
 
 /*foot*/

@@ -24,72 +24,98 @@
     		<div class="contentBox">
     			<div class="contentBoxLeft">
     				<div class="navBox">		
-    					<div>手机注册</div>
-    					<div>邮箱注册</div>
+    					<div class="phone zz"><span></span>手机注册</div>
+    					<div class="email zz"><span></span>邮箱注册</div>
     					<div class="bgBox"></div>
     				</div>
     				<div class="aniBox">
     					<ul>
-    						<li>
-    							<div>
-    								<span>*</span>邮箱：
-    								<input type="text" />
+    						<li class="phonezhuce">
+    							<div class="com phoneBox inp inpBox">
+    								<label for="p_phone">手机号：</label>
+    								<input type="text" id="p_phone" />
+    								<div class="inputTips">
+    									
+    								</div>
+    							</div>
+    							<div class="com inp inpBox setpass">
+    								<label for="p_password">设置密码：</label>
+    								<input type="password" id="p_password" placeholder="6-20位非空格字符" />
+    								<div class="inputTips">
+    									
+    								</div>
+    							</div>
+    							<div class="com inp inpBox checkPassword">
+    								<label for="p_checkPassword">确认密码：</label>
+    								<input type="password" id="p_checkPassword"/>
+    								<div class="inputTips">
+    									
+    								</div>
+    							</div>
+    							<div class="checkBoxCode">
+    								<div class="checkBoxCode-item inp inpBox">
+    									<label for="p_checkCode">验证码：</label>
+    									<input type="text" id="p_checkCode"/>
+    								</div>	
+    								<img src="img/yanzheng1.gif" data-num="">
+    								<a class="changeAnother">换一张</a>
     								<div></div>
     							</div>
-    							<div>
-    								<span>*</span>设置密码：
-    								<input type="password" />
-    								<div></div>
+    							<div class="com p_jiayanCodebox inp inpBox">
+    								<label for="p_jiayanCode">校验码：</label>
+    								<div class="p_jiayanCodeClick">获取校验码</div>
+    								<label for="p_jiayanCode" class="phoneImg"></label>
+    								<input type="text" id="p_jiayanCode" />
     							</div>
-    							<div>
-    								<span>*</span>确认密码：
-    								<input type="password" />
-    								<div></div>
-    							</div>
-    							<div>
-    								<span>*</span>手机号：
-    								<input type="text" />
-    								<div></div>
-    							</div>
-    							<div>
-    								<input type="text" />
-    								<img src="">
-    								<a href="#">换一张</a>
-    								<div></div>
-    							</div>
-    							<p>点击注册，表示您同意购酒网<a href="#">《服务协议》</a> </p>
-    							<div class="zhuce">注册</div>
+    							<p class="userXieYi">点击注册，表示您同意购酒网<a href="#">《服务协议》</a> </p>
+    							<div class="p_zhuceBtn">注册</div>
     						</li>
-    						<li>
-    							<div>
-    								<span>*</span>邮箱：
-    								<input type="text" />
+    						<li class="emailzhuce">
+    							<div class="com inp inpBox rma">
+    								<span>*</span>
+    								<label for="e_email">邮箱：</label>
+    								<input type="text" id="e_email" />
+    								<div class="inputTips">
+    									
+    								</div>
+    							</div>
+    							<div class="com inp inpBox e-setpass">
+    								<span>*</span>
+    								<label for="e_password">设置密码：</label>
+    								<input type="password" id="e_password" placeholder="6-20位非空格字符"/>
+    								<div class="inputTips">
+    									
+    								</div>
+    							</div>
+    							<div class="com inp inpBox e-checkPassword">
+    								<span>*</span>
+    								<label for="e_checkPassword">确认密码：</label>
+    								<input type="password" id="e_checkPassword" />
+    								<div class="inputTips">
+    									
+    								</div>
+    							</div>
+    							<div class="com inp inpBox checke">
+    								
+    								<label for="e_phone">手机号：</label>
+    								<input type="text" id="e_phone" />
+    								<div class="inputTips">
+    									
+    								</div>
+    							</div>
+    							<div class="e-checkBoxCode">
+    								<div class="e-checkBoxCode-item inp inpBox">
+    									<label for="e_checkCode">验证码：</label>
+    									<input type="text" id="e_checkCode" />
+    								</div>	
+    								<img src="img/yanzheng1.gif">
+    								<a class="e-changeAnother">换一张</a>
     								<div></div>
     							</div>
-    							<div>
-    								<span>*</span>设置密码：
-    								<input type="password" />
-    								<div></div>
-    							</div>
-    							<div>
-    								<span>*</span>确认密码：
-    								<input type="password" />
-    								<div></div>
-    							</div>
-    							<div>
-    								<span>*</span>手机号：
-    								<input type="text" />
-    								<div></div>
-    							</div>
-    							<div>
-    								<input type="text" />
-    								<img src="">
-    								<a href="#">换一张</a>
-    								<div></div>
-    							</div>
-    							<p>点击注册，表示您同意购酒网<a href="#">《服务协议》</a> </p>
-    							<div class="zhuce">注册</div>
+    							<p class="userXieYi">点击注册，表示您同意购酒网<a href="#">《服务协议》</a> </p>
+    							<div class="e_zhuceBtn">注册</div>
     						</li>
+    						
     					</ul>
     				</div>
     			</div>
@@ -116,6 +142,6 @@
 		</div>
     </body>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-		<script type="text/javascript" src="js/jquery.cookie.js"></script>
-    	<script type="text/javascript" src="js/register.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
 </html>
